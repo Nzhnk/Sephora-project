@@ -1,0 +1,318 @@
+@import "reset.scss";
+@import "common.scss";
+
+/* head */
+#head{
+	height: 89px;
+	background: #fff;
+	.head_con{
+		height: 89px;
+		a{
+			float: left;
+			margin-top: 28px;
+		}
+		span{
+			float: left;
+			font-size: 16px;
+		    letter-spacing: 1px;
+		    color: #333;
+		    margin: 45px 0 0 30px;
+		}
+		.head_to_login{
+			float: right;
+			height: 89px;
+			line-height: 75px;
+			font-size: 12px;
+			i,a,b,p{
+				float: left;
+			}
+			i{
+				color: #9d9d9d;
+			}
+			a{
+				margin-top: 0;
+				color: #000;
+			}
+			b{
+				width: 0;
+			    height: 0;
+			    border-top: 4px solid transparent;
+			    border-left: 5px solid #000;
+			    border-bottom: 4px solid transparent;
+			    float: left;
+			    margin-top: 33px;
+			    margin-left: 2px;
+			}
+			p:hover{
+				a{
+					color:red;
+					text-decoration: underline;
+				}
+				b{
+					border-left-color:red;
+				}
+			}
+		}
+	}
+}
+
+/* main */
+#main{
+	height: 804px;
+	background: transparent url(../images/register/loginsSearchPassword_Bg.jpeg) no-repeat scroll 50% 0;
+}
+.main_con{
+	height: 740px;
+	padding-top: 64px;
+}
+.main_box{
+	margin-left:80px;
+	width:730px;
+	min-height:390px;
+	.reg_phone,.reg_email{
+		position:relative;
+		._p{
+		    font-size: 14px;
+		    width: 730px;
+		    ._pbox, p, img, button{
+				float: left;
+			}
+			p{
+				width: 100px;
+				height: 32px;
+			    line-height: 32px;
+			    text-align: right;
+			    margin-right: 10px;
+			    text-align: center;
+			}
+			._pbox{
+			    border: 1px solid #ccc;
+			    width: 300px;
+			    height: 30px;
+			    position:relative;
+			    input{
+			    	width: 270px;
+			    	height: 30px;
+			    	text-indent: 20px;
+			    	box-sizing: border-box;
+			    	border: none;
+			    }
+			    em{
+			    	position:absolute;
+			    	width: 18px;
+			    	height: 18px;
+			    	top: 6px;
+			    	right: 6px;
+			    	cursor: pointer;
+			    	display: none;
+			    }
+			    ._pclose,._perror,._psuccess{
+			    	background:url(../images/register/LoginIn-icon.png) no-repeat;
+			    	content: "";
+			    }
+			    ._pclose{
+			    	background-position: -20px -18px;
+			    }
+			    ._perror{
+			    	background-position: -20px -36px;
+			    }
+			    ._psuccess{
+			    	background-position: -20px 0px;
+			    }
+			    &:hover{
+			    	border-bottom-color: #000;
+			    	em{
+						display: block;
+				    }
+				} 
+			}
+			img{
+				width: 120px;
+				height: 32px;
+				float: left;
+				margin-left: 10px;
+				cursor: pointer;
+			}
+			button{
+				margin-left: 10px;
+				width: 120px;
+				height: 32px;
+				font-size: 14px;
+				float: left;
+				cursor: pointer;
+				transition: all .5s;
+				background: #ccc;
+				color: #fff;
+				outline: none;
+				border:none;
+			}
+		}
+		.error_tip{
+		    float: left;
+		    width: 620px;
+		    margin-left: 110px;
+		    height: 34px;
+		    line-height: 24px;
+		}
+		.confirm_btn,.confirm_mask{
+		    margin-left: 110px;
+		    width: 300px;
+		    height: 30px;
+		    line-height: 30px;
+		    background-color: #000;
+		    color: #fff;
+		    float: left;
+		    font-size: 14px;
+		    letter-spacing: 2px;
+		    text-align: center;
+		    transition: all 1s;
+		}
+		.confirm_btn{
+			cursor: pointer;
+		}
+		.confirm_btn:hover{
+			background-color: #e00;
+		}
+		.confirm_mask{
+			position: absolute;
+			background-color: #999;
+			bottom: 30px;
+
+		}
+		.read{
+			float: left;
+			margin-left: 110px;
+			width: 300px;
+			height: 30px;
+			line-height: 30px;
+			color: #9d9d9d;
+			font-size: 12px;
+			p{
+				float: left;
+				cursor: pointer;
+				&:hover{
+					color: red;
+					text-decoration: underline;
+				}
+			}
+			ul{
+			    float: right;
+				cursor: pointer;
+			    li{
+			    	float: left;
+			    	color: #9d9d9d;
+			    }
+			    .arrow_r{
+					width: 0;
+					height: 0;
+					border-top: 4px solid transparent;
+					border-left: 5px solid #9d9d9d;
+					border-bottom: 4px solid transparent;
+					float: left;
+					margin-top: 11px;
+					margin-left: 2px;
+			    }
+			    &:hover{
+			    	li{
+			    		color: red;
+			    		text-decoration: underline;
+			    	}
+			    	.arrow_r{
+			    		border-left-color: red;
+			    	}
+			    }
+			}
+		}
+	}
+}
+
+/* rules */
+#rules{
+	width: 100%;
+	height: 100%;
+	background: rgba( 0,0,0,.5);
+	position:fixed;
+	top:0;
+	left:0;
+	z-index: 10;
+	display: none;
+	.rules_con{
+		background-color: #fff;
+		position: fixed;
+		width: 900px;
+		height: 580px;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+		z-index: 101;
+	}
+	.rules_title{
+		background-color: #000;
+		height: 58px;
+		width: 900px;
+		position:relative;
+		h3{
+			width: 200px;
+			margin: 0 auto;
+			text-align: center;
+			color: #fff;
+			font-size: 18px;
+			height: 58px;
+			line-height: 58px;
+		}
+		.rules_close{
+			width: 17px;
+		    height: 17px;
+		   	position: absolute;
+		    top: 20px;
+		    right: 20px;
+		    background-image: url(../images/register/loginSearchPassword_icon.png);
+		    background-position: -97px -56px;
+		    cursor: pointer;
+		}
+	}
+	.rules_text{
+		width: 840px;
+		height: 400px;
+		margin: 30px 0 0 30px;
+		overflow: auto;
+		p{
+			font-size: 14px;
+			color: #000;
+			line-height: 30px;
+			letter-spacing: 0;
+		}
+		.p-title{
+			height: 108px;
+		}
+		.p-subtitle b{
+			font-weight: 700;
+		}
+	}
+	.rules_btn{
+		margin-left: 330px;
+		width: 240px;
+		height: 40px;
+		line-height: 40px;
+		font-size: 18px;
+		background-color: #000;
+		margin-top: 20px;
+		color: #fff;
+		float: left;
+		letter-spacing: 2px;
+		text-align: center;
+		cursor: pointer;
+		transition: all .5s;
+		-webkit-transition: all .5s;
+		&:hover{
+			background-color: #e00;
+		}
+	}
+}
+
+/* footer */
+#footer{
+	background: #000;
+}

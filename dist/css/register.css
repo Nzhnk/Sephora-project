@@ -1,0 +1,405 @@
+@charset "UTF-8";
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img, input, figure {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "微软雅黑"; }
+
+ul, ol, li {
+  list-style: none; }
+
+b, strong {
+  font-weight: 100; }
+
+em, i {
+  font-style: normal; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100;
+  font-size: 16px; }
+
+a, u {
+  text-decoration: none; }
+
+input, select {
+  outline: none; }
+
+img {
+  display: block;
+  border: 0; }
+
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden; }
+
+.clearfix {
+  zoom: 1; }
+
+.top_con, .head_con, .banner_con, .weekly_con, .brands_con, .picks_con, .commom_con, .footer_con, .login_con, .main_con {
+  width: 1190px;
+  margin: 0 auto; }
+
+/* footer 底部 */
+#footer {
+  background: #fff; }
+
+.footer_con_top {
+  padding: 30px 0;
+  height: 96px;
+  width: 1190px; }
+  .footer_con_top .footer_server {
+    float: left;
+    width: 236px;
+    height: 96px; }
+    .footer_con_top .footer_server i {
+      width: 49px;
+      height: 49px;
+      display: block;
+      margin: 0 auto;
+      background: url(../images/index/sprite/footer_ico_sprite.png) no-repeat;
+      content: "";
+      background-repeat: no-repeat; }
+    .footer_con_top .footer_server .server_01 {
+      background-position: -137px 0; }
+    .footer_con_top .footer_server .server_02 {
+      background-position: -90px 0; }
+    .footer_con_top .footer_server .server_03 {
+      background-position: 0 0; }
+    .footer_con_top .footer_server .server_04 {
+      background-position: -180px 0; }
+    .footer_con_top .footer_server .server_05 {
+      width: 45px;
+      background-position: -47px 0; }
+    .footer_con_top .footer_server span {
+      text-align: center;
+      display: block;
+      font-weight: 700;
+      height: 18px;
+      line-height: 18px;
+      margin-top: 14px; }
+  .footer_con_top .footer_bar {
+    float: left;
+    height: 24px;
+    width: 1px;
+    background-color: #9d9d9d;
+    margin-top: 36px; }
+
+.footer_con_bottom {
+  padding: 30px 0 50px;
+  min-height: 150px;
+  padding: 30px 0 50px;
+  background-repeat: no-repeat;
+  background-position: right 40px;
+  border-top: 2px solid #000;
+  background: url(../images/index/icon/footer_line.png) no-repeat right center; }
+  .footer_con_bottom li {
+    float: left;
+    width: 190px; }
+    .footer_con_bottom li .footer_title {
+      font-weight: bolder;
+      color: #000;
+      margin-bottom: 10px; }
+    .footer_con_bottom li a {
+      color: #696969;
+      display: block;
+      height: 26px;
+      line-height: 26px; }
+  .footer_con_bottom .footer_last_li {
+    width: 220px; }
+
+.footer_bottom {
+  width: 100%;
+  background: #000;
+  padding: 30px 0;
+  text-align: center; }
+  .footer_bottom ul {
+    display: inline-block;
+    height: 42px;
+    vertical-align: middle;
+    padding: 0 22px;
+    color: #6f6f6f;
+    font-size: 14px; }
+    .footer_bottom ul .record {
+      width: 100%;
+      height: 21px;
+      line-height: 21px;
+      text-align: center; }
+      .footer_bottom ul .record a {
+        margin: 0 22px;
+        font-size: 14px;
+        color: #6f6f6f; }
+      .footer_bottom ul .record .police {
+        padding-left: 30px;
+        background: url(../images/index/icon/footer-redords-icon.png) no-repeat left center; }
+    .footer_bottom ul .address {
+      width: 100%; }
+      .footer_bottom ul .address a {
+        color: #6f6f6f; }
+  .footer_bottom .web_leader {
+    display: inline-block;
+    height: 42px;
+    vertical-align: middle; }
+
+/* head */
+#head {
+  height: 89px;
+  background: #fff; }
+  #head .head_con {
+    height: 89px; }
+    #head .head_con a {
+      float: left;
+      margin-top: 28px; }
+    #head .head_con span {
+      float: left;
+      font-size: 16px;
+      letter-spacing: 1px;
+      color: #333;
+      margin: 45px 0 0 30px; }
+    #head .head_con .head_to_login {
+      float: right;
+      height: 89px;
+      line-height: 75px;
+      font-size: 12px; }
+      #head .head_con .head_to_login i, #head .head_con .head_to_login a, #head .head_con .head_to_login b, #head .head_con .head_to_login p {
+        float: left; }
+      #head .head_con .head_to_login i {
+        color: #9d9d9d; }
+      #head .head_con .head_to_login a {
+        margin-top: 0;
+        color: #000; }
+      #head .head_con .head_to_login b {
+        width: 0;
+        height: 0;
+        border-top: 4px solid transparent;
+        border-left: 5px solid #000;
+        border-bottom: 4px solid transparent;
+        float: left;
+        margin-top: 33px;
+        margin-left: 2px; }
+      #head .head_con .head_to_login p:hover a {
+        color: red;
+        text-decoration: underline; }
+      #head .head_con .head_to_login p:hover b {
+        border-left-color: red; }
+
+/* main */
+#main {
+  height: 804px;
+  background: transparent url(../images/register/loginsSearchPassword_Bg.jpeg) no-repeat scroll 50% 0; }
+
+.main_con {
+  height: 740px;
+  padding-top: 64px; }
+
+.main_box {
+  margin-left: 80px;
+  width: 730px;
+  min-height: 390px; }
+  .main_box .reg_phone, .main_box .reg_email {
+    position: relative; }
+    .main_box .reg_phone ._p, .main_box .reg_email ._p {
+      font-size: 14px;
+      width: 730px; }
+      .main_box .reg_phone ._p ._pbox, .main_box .reg_phone ._p p, .main_box .reg_phone ._p img, .main_box .reg_phone ._p button, .main_box .reg_email ._p ._pbox, .main_box .reg_email ._p p, .main_box .reg_email ._p img, .main_box .reg_email ._p button {
+        float: left; }
+      .main_box .reg_phone ._p p, .main_box .reg_email ._p p {
+        width: 100px;
+        height: 32px;
+        line-height: 32px;
+        text-align: right;
+        margin-right: 10px;
+        text-align: center; }
+      .main_box .reg_phone ._p ._pbox, .main_box .reg_email ._p ._pbox {
+        border: 1px solid #ccc;
+        width: 300px;
+        height: 30px;
+        position: relative; }
+        .main_box .reg_phone ._p ._pbox input, .main_box .reg_email ._p ._pbox input {
+          width: 270px;
+          height: 30px;
+          text-indent: 20px;
+          box-sizing: border-box;
+          border: none; }
+        .main_box .reg_phone ._p ._pbox em, .main_box .reg_email ._p ._pbox em {
+          position: absolute;
+          width: 18px;
+          height: 18px;
+          top: 6px;
+          right: 6px;
+          cursor: pointer;
+          display: none; }
+        .main_box .reg_phone ._p ._pbox ._pclose, .main_box .reg_phone ._p ._pbox ._perror, .main_box .reg_phone ._p ._pbox ._psuccess, .main_box .reg_email ._p ._pbox ._pclose, .main_box .reg_email ._p ._pbox ._perror, .main_box .reg_email ._p ._pbox ._psuccess {
+          background: url(../images/register/LoginIn-icon.png) no-repeat;
+          content: ""; }
+        .main_box .reg_phone ._p ._pbox ._pclose, .main_box .reg_email ._p ._pbox ._pclose {
+          background-position: -20px -18px; }
+        .main_box .reg_phone ._p ._pbox ._perror, .main_box .reg_email ._p ._pbox ._perror {
+          background-position: -20px -36px; }
+        .main_box .reg_phone ._p ._pbox ._psuccess, .main_box .reg_email ._p ._pbox ._psuccess {
+          background-position: -20px 0px; }
+        .main_box .reg_phone ._p ._pbox:hover, .main_box .reg_email ._p ._pbox:hover {
+          border-bottom-color: #000; }
+          .main_box .reg_phone ._p ._pbox:hover em, .main_box .reg_email ._p ._pbox:hover em {
+            display: block; }
+      .main_box .reg_phone ._p img, .main_box .reg_email ._p img {
+        width: 120px;
+        height: 32px;
+        float: left;
+        margin-left: 10px;
+        cursor: pointer; }
+      .main_box .reg_phone ._p button, .main_box .reg_email ._p button {
+        margin-left: 10px;
+        width: 120px;
+        height: 32px;
+        font-size: 14px;
+        float: left;
+        cursor: pointer;
+        transition: all .5s;
+        background: #ccc;
+        color: #fff;
+        outline: none;
+        border: none; }
+    .main_box .reg_phone .error_tip, .main_box .reg_email .error_tip {
+      float: left;
+      width: 620px;
+      margin-left: 110px;
+      height: 34px;
+      line-height: 24px; }
+    .main_box .reg_phone .confirm_btn, .main_box .reg_phone .confirm_mask, .main_box .reg_email .confirm_btn, .main_box .reg_email .confirm_mask {
+      margin-left: 110px;
+      width: 300px;
+      height: 30px;
+      line-height: 30px;
+      background-color: #000;
+      color: #fff;
+      float: left;
+      font-size: 14px;
+      letter-spacing: 2px;
+      text-align: center;
+      transition: all 1s; }
+    .main_box .reg_phone .confirm_btn, .main_box .reg_email .confirm_btn {
+      cursor: pointer; }
+    .main_box .reg_phone .confirm_btn:hover, .main_box .reg_email .confirm_btn:hover {
+      background-color: #e00; }
+    .main_box .reg_phone .confirm_mask, .main_box .reg_email .confirm_mask {
+      position: absolute;
+      background-color: #999;
+      bottom: 30px; }
+    .main_box .reg_phone .read, .main_box .reg_email .read {
+      float: left;
+      margin-left: 110px;
+      width: 300px;
+      height: 30px;
+      line-height: 30px;
+      color: #9d9d9d;
+      font-size: 12px; }
+      .main_box .reg_phone .read p, .main_box .reg_email .read p {
+        float: left;
+        cursor: pointer; }
+        .main_box .reg_phone .read p:hover, .main_box .reg_email .read p:hover {
+          color: red;
+          text-decoration: underline; }
+      .main_box .reg_phone .read ul, .main_box .reg_email .read ul {
+        float: right;
+        cursor: pointer; }
+        .main_box .reg_phone .read ul li, .main_box .reg_email .read ul li {
+          float: left;
+          color: #9d9d9d; }
+        .main_box .reg_phone .read ul .arrow_r, .main_box .reg_email .read ul .arrow_r {
+          width: 0;
+          height: 0;
+          border-top: 4px solid transparent;
+          border-left: 5px solid #9d9d9d;
+          border-bottom: 4px solid transparent;
+          float: left;
+          margin-top: 11px;
+          margin-left: 2px; }
+        .main_box .reg_phone .read ul:hover li, .main_box .reg_email .read ul:hover li {
+          color: red;
+          text-decoration: underline; }
+        .main_box .reg_phone .read ul:hover .arrow_r, .main_box .reg_email .read ul:hover .arrow_r {
+          border-left-color: red; }
+
+/* rules */
+#rules {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: none; }
+  #rules .rules_con {
+    background-color: #fff;
+    position: fixed;
+    width: 900px;
+    height: 580px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 101; }
+  #rules .rules_title {
+    background-color: #000;
+    height: 58px;
+    width: 900px;
+    position: relative; }
+    #rules .rules_title h3 {
+      width: 200px;
+      margin: 0 auto;
+      text-align: center;
+      color: #fff;
+      font-size: 18px;
+      height: 58px;
+      line-height: 58px; }
+    #rules .rules_title .rules_close {
+      width: 17px;
+      height: 17px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-image: url(../images/register/loginSearchPassword_icon.png);
+      background-position: -97px -56px;
+      cursor: pointer; }
+  #rules .rules_text {
+    width: 840px;
+    height: 400px;
+    margin: 30px 0 0 30px;
+    overflow: auto; }
+    #rules .rules_text p {
+      font-size: 14px;
+      color: #000;
+      line-height: 30px;
+      letter-spacing: 0; }
+    #rules .rules_text .p-title {
+      height: 108px; }
+    #rules .rules_text .p-subtitle b {
+      font-weight: 700; }
+  #rules .rules_btn {
+    margin-left: 330px;
+    width: 240px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    background-color: #000;
+    margin-top: 20px;
+    color: #fff;
+    float: left;
+    letter-spacing: 2px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .5s;
+    -webkit-transition: all .5s; }
+    #rules .rules_btn:hover {
+      background-color: #e00; }
+
+/* footer */
+#footer {
+  background: #000; }

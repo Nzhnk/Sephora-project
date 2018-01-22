@@ -1,0 +1,34 @@
+define( [ "jquery" ], function(){
+	class Loading{
+		constructor(){
+			this.init();
+		};
+		init(){
+			// 获取渲染载体
+			this.uls = $( ".p_cont" );
+			// console.log(this.uls)
+			// 获取渲染需要的数据
+			let url = {
+				url : "../data/list_data.json",
+				type : "GET",
+				context:this
+			}
+			$.ajax( url ).then( $.proxy( this.render, this ) );
+		};
+		/* 渲染列表 */
+		render( res ){
+			this.data = $( res );
+			// console.log(res);
+			let _this = this;
+			this.data.each( function( index, item ){
+				_this.uls.eq( index )
+				.attr( "data_id", _this.data[index].id )
+				.find( ".p_img img" ).attr( "src", _this.data[index].img )
+				.end().find( ".p_branden" ).html( _this.data[index].title )
+				.end().find( ".p_brandcn a" ).html( _this.data[index].describe )
+				.end().find( ".p_price" ).html( _this.data[index].price );
+			} );
+		};
+	};
+	return new Loading();
+} );

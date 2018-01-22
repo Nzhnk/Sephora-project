@@ -1,0 +1,276 @@
+@import "reset.scss";
+@import "common.scss";
+
+/* head */
+#head{
+	height: 89px;
+	background: #fff;
+	.head_con{
+		height: 89px;
+		a{
+			float: left;
+			margin-top: 28px;
+		}
+	}
+}
+
+/* login */
+#login{
+	height:610px;
+	background: url(../images/login/hp_loginlagebg.jpeg)  transparent no-repeat scroll 50% 0;
+	.login_con{
+		position: relative;
+		height: 610px;
+	}
+	.main{
+	    width: 300px;
+	    height: 354px;
+	    padding: 26px 30px 0;
+	    background-color: #fff;
+	    margin: 115px 0 0 800px;
+	    position: absolute;
+	    z-index: 2;
+	    h2{
+		    width: 100%;
+		    height: 20px;
+		    line-height: 20px;
+		    font-size: 16px;
+		    letter-spacing: 1px;
+		    color: #000;
+	    }
+	    .tip{
+    	    width: 300px;
+		    height: 32px;
+		    line-height: 32px;
+		    float: left;
+		    font-size: 12px;
+		    position: relative;
+		    div{
+				width: 300px;
+				height: 32px;
+				line-height: 32px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				display: none;
+				i{
+					float: left;
+					margin: 9px 4px 0 0;
+					width: 14px;
+					height: 14px;
+					background: url(../images/login/LoginIn-icon.png) no-repeat;
+					content: "";
+					background-position: -38px -14px;
+				}
+				span{
+					float: left;
+					color: #f12526;
+					line-height: 30px;
+				}
+		    }
+	    }
+	    .user_input{
+	    	float: left;
+		    width: 300px;
+		    height: 32px;
+		    background-color: #fff;
+		    margin-top: 8px;
+		    position: relative;
+		    border: 1px solid #ccc;
+		    z-index: 1;
+		    i{
+		    	position:absolute;
+		    	width: 20px;
+		    	height: 20px;
+		    	margin-left: 7px;
+    			margin-top: 6px;
+    			background-image: url(../images/login/LoginIn-icon.png);
+			    content: "";
+			    background-position: 0 -20px;
+		    }
+		    .username{
+		    	-webkit-appearance: none; 
+			    border:none;
+			    text-indent: 32px;
+			    width: 266px;
+			    height: 30px;
+		    }
+			&:hover{
+				border-bottom-color: #000;
+			}
+	    }
+	    .pass_input{
+	    	float: left;
+		    width: 300px;
+		    height: 32px;
+		    background-color: #fff;
+		    margin-top: 20px;
+		    position: relative;
+		    border: 1px solid #ccc;
+		    i{
+		    	position:absolute;
+		    	width: 20px;
+		    	height: 20px;
+		    	margin-left: 7px;
+    			margin-top: 6px;
+    			background-image: url(../images/login/LoginIn-icon.png);
+			    content: "";
+			    background-position: 0 0px;
+		    }
+		    .password{	
+		    	-webkit-appearance: none; 
+			    border: none;
+			    text-indent: 32px;
+			    width: 266px;
+			    height: 30px;
+		    }
+			&:hover{
+				border-bottom-color: #000;
+			}
+	    }
+	    .close,.error,.success{
+	    	position:absolute;
+	    	width: 18px;
+	    	height: 18px;
+	    	background: url(../images/login/LoginIn-icon.png);
+	    	content: "";
+		    background-position: -20px -18px;
+		    top: 7px;
+		    right: 7px;
+		    cursor: pointer;
+		    display: none;
+		    z-index: 3;
+	    }
+	    .error{
+	    	background: url(../images/login/LoginIn-icon.png);
+	    	content: "";
+		    background-position: -20px -36px;
+		    z-index: 4;
+	    }
+	    .success{
+	    	background: url(../images/login/LoginIn-icon.png);
+	    	content: "";
+		    background-position: -20px 0px;
+		    z-index: 5;
+	    }
+	    .forgot{
+	    	width: 300px;
+		    height: 50px;
+		    line-height: 50px;
+		    color: #919191;
+		    float: left;
+		    p{
+				float: left;
+				cursor: pointer;
+				font-size: 12px;
+				&:hover{
+					color: #e00;
+				}
+		    }
+	    }
+	    .log{
+	    	width: 300px;
+		    height: 40px;
+		    line-height: 40px;
+		    float: left;
+		    letter-spacing: 2px;
+		    text-align: center;
+		    position:relative;
+		    .btn{
+		    	width: 300px;
+		    	height: 40px;
+		    	line-height: 40px;
+		    	font-size: 16px;
+		    	border:none;
+		    	background-color: #000;
+		    	color: #fff;
+		    	cursor: pointer;
+		    	transition: all 1s;
+		    	&:hover{
+		    		background-color: #e00;
+		    	}
+		    }
+		    .btn_mask{
+		    	position:absolute;
+		    	top: 0;
+		    	left: 0;
+		    	width: 300px;
+		    	height: 41px;
+		    	line-height: 40px;
+		    	font-size: 16px;
+		    	border:none;
+		    	background-color: #999;
+		    	color: #fff;
+		    	transition: all 1s;
+		    }
+	    }
+	    .link{
+	    	float: left;
+	    	width: 300px;
+		    height: 50px;
+		    line-height: 50px;
+		    color: #919191;
+		    text-align: right;
+		    .msg{
+		    	float: left;
+		    	i{
+		    		float: left;
+				    width: 24px;
+				    height: 24px;
+				    margin-top: 13px;
+				    cursor: pointer;
+				    margin-right: 10px;
+				    background-image: url(../images/login/LoginIn-icon.png);
+    				content: "";
+		    	}
+		    	.wechat{
+		    		background-position: -56px 0;
+		    		&:hover{
+		    			background-position: -80px 0;
+		    		}
+		    	}
+		    	.tencent{
+		    		background-position: -56px -24px;
+		    		&:hover{
+		    			background-position: -80px -24px;
+		    		}
+		    	}
+		    	.sina{
+		    		background-position: -56px -48px;
+		    		&:hover{
+		    			background-position: -80px -48px;
+		    		}
+		    	}
+		    }	
+		    .register{
+		    	float: right;
+		    	height: 50px;
+		    	line-height: 50px;
+		    	color: #919191;
+		    	font-size: 12px;
+		    	span, a, i{
+		    		float: left;
+		    	}
+		    	a{
+		    		color: #e00;
+		    		&:hover{
+		    			text-decoration: underline;
+		    		}
+		    	}
+		    	i{
+		    		width: 4px;
+		    		height: 8px;
+	    		    background-image: url(../images/login/LoginIn-icon.png);
+    				content: "";
+    				background-position: -52px 0;
+    				margin: 22px 0 0 6px;
+		    	}
+		    }
+	    }
+	}
+}
+
+/* footer */
+#footer{
+	background: #000;
+}
