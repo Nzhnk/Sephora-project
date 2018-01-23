@@ -2,6 +2,8 @@
 requirejs.config( {
 	paths : {
 		"jquery" : "scripts/common/jquery-3.2.1",
+		"cookie" : "scripts/common/jquery.cookie",
+		"islogin" : "scripts/index/isLogin",
 		"banner" : "scripts/index/banner",
 		"rendering" : "scripts/index/rendering",
 		"picks" : "scripts/index/small_banner",

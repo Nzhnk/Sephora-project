@@ -18,7 +18,16 @@ define( [ "jquery" ], function(){
 		/* 渲染列表 */
 		render( res ){
 			this.data = $( res );
-			// console.log(res);
+			console.log(res);
+			// 排序实验
+			let newArray = res;
+			function sortprice(a,b){  
+               return a.popularity-b.popularity;  
+            }  
+            newArray.sort(sortprice);
+            console.log(newArray);
+
+
 			let _this = this;
 			this.data.each( function( index, item ){
 				_this.uls.eq( index )
@@ -26,8 +35,11 @@ define( [ "jquery" ], function(){
 				.find( ".p_img img" ).attr( "src", _this.data[index].img )
 				.end().find( ".p_branden" ).html( _this.data[index].title )
 				.end().find( ".p_brandcn a" ).html( _this.data[index].describe )
-				.end().find( ".p_price" ).html( _this.data[index].price );
+				.end().find( ".p_price" ).html( "￥" + _this.data[index].price );
 			} );
+		};
+		sort_up(){
+
 		};
 	};
 	return new Loading();

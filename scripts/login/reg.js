@@ -8,6 +8,7 @@ define( [ "jquery" ], function(){
 			// 获取登录按钮
 			this.btn = $( ".btn" );
 			this.mask = $( ".btn_mask" );
+			this.allow = $( ".btn_p" );
 			// 获取提示
 			this.tip = $( ".tip" );
 			// 定义正则规则
@@ -80,7 +81,6 @@ define( [ "jquery" ], function(){
 			let sCookie = $.cookie( user );
 			let obj = JSON.parse( sCookie );
 			// 模拟登录成功
-			let num = Math.random();
 			if( flag ){
 				if( obj.userphone === user && obj.password === pass ){
 					this.tip.children().css( {
@@ -95,6 +95,7 @@ define( [ "jquery" ], function(){
 					let _s = self;
 					setTimeout( function(){
 						_s.location.href= "http://localhost:8888/index.html";
+						
 					}, 500 );
 				} else {
 					$( ".tip_03" ).css( {

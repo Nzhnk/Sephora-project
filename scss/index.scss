@@ -189,6 +189,22 @@ body{
         background-color: $white;
         margin-top:7px;
     }
+    .user_name:hover{
+        color: #fff;
+        cursor: text;
+    }
+    .user_name span{
+        float: left;
+    }
+    .user_img{
+        display: inline-block;
+        width: 22px;
+        height: 16px;
+        vertical-align: middle;
+        margin-left: 10px;
+        margin-top: 9px;
+        background: url(../images/index/icon/card-pink.png) no-repeat;
+    }
 }
 .top_center{
     width: 230px;

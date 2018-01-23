@@ -304,6 +304,19 @@ body {
     height: 16px;
     background-color: #fff;
     margin-top: 7px; }
+  .top_left .user_name:hover {
+    color: #fff;
+    cursor: text; }
+  .top_left .user_name span {
+    float: left; }
+  .top_left .user_img {
+    display: inline-block;
+    width: 22px;
+    height: 16px;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-top: 9px;
+    background: url(../images/index/icon/card-pink.png) no-repeat; }
 
 .top_center {
   width: 230px;

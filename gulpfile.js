@@ -9,6 +9,14 @@ gulp.task( "html", () => {
 		.pipe( gulp.dest( "dist/html" ) )
 		.pipe( connect.reload() );//自动刷新;
 } );
+
+gulp.task( "html2", () => {
+    return gulp
+        .src( [ "*.html" ] )
+        .pipe( gulp.dest( "dist" ) )
+        .pipe( connect.reload() );//自动刷新;
+} );
+
 gulp.task( 'server', function(){
     connect.server( {
         root : 'dist',  //以谁为服务器根目录
@@ -38,7 +46,7 @@ gulp.task('data',() => {
         .pipe(gulp.dest('dist/data'))//*代表所有
 } );
 gulp.task( "watch", () => {
-	gulp.watch( [ "scss/*.scss", "images/**", "scripts/**/*.js", "data/*.json", "html/*.html" ], [ "sass", "images", "scripts", "data", "html" ] );
+	gulp.watch( [ "scss/*.scss", "images/**", "scripts/**/*.js", "data/*.json", "html/*.html", "*.html" ], [ "sass", "images", "scripts", "data", "html", "html2" ] );
 } );
 gulp.task( "default", [ "watch", "server" ] );
 

@@ -40,6 +40,8 @@ define( [ "jquery", "cookie" ], function(){
 			let propY = this.mask.height() / this.big.height();
 			// 大图移动
 			this.big_img.css( {
+				width: this.small_img.width() / propX,
+				height: this.small_img.height() / propY,
 				left: -X / propX,
 				top: -Y/propY
 			} );

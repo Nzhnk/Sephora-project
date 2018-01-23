@@ -258,7 +258,10 @@ define( [ "jquery", "cookie" ], function(){
 				    expires:20,  
 				    path:'/'
 				} );　
-				console.log( $.cookie(userphone) )
+				let _s = self;
+				setTimeout( function(){
+					_s.location.href = "http://localhost:8888/index.html";
+				}, 500 );
 			};
 		};
 		errot_msg( str_msg ){

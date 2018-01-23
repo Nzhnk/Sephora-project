@@ -1,6 +1,9 @@
 /* 业务逻辑页面 */
 require( [ "scripts/index/config.js" ], function(){
-	require( [ "jquery", "rendering", "banner", "picks", "fixed", "search", "fixed_s", "brands", "blist", "lamp", "link" ], function( $, rendering, banner, picks, fixed, search, s2, brands, blist, lamp, link ){
+	require( [ "jquery", "cookie", "islogin", "rendering", "banner", "picks", "fixed", "search", "fixed_s", "brands", "blist", "lamp", "link" ], function( $, cookie, islogin, rendering, banner, picks, fixed, search, s2, brands, blist, lamp, link ){
+		// 判断登录状态
+		// islogin;
+
 		// 渲染页面 => 通信ok
 		rendering.init( "data/index_data.json" );
 		// 轮播图 => 通信ok

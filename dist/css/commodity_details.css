@@ -660,7 +660,7 @@ body {
     z-index: 9;
     top: 0;
     left: 0;
-    background: rgba(252, 252, 252, 0.7);
+    background: rgba(255, 182, 193, 0.7);
     display: none; }
 
 .details_info .details_list {

@@ -5,6 +5,8 @@ requirejs.config( {
 		"cookie" : "../scripts/common/jquery.cookie",
 		"rendring" : "../scripts/goodsdetails/rendring",
 		"glass" : "../scripts/goodsdetails/glass",
+		"count" : "../scripts/goodsdetails/addcount",
+		"add" : "../scripts/goodsdetails/add_to_cart",
 		"link" : "../scripts/goodsdetails/link"
 	}
 } );

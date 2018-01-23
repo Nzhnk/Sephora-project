@@ -25,6 +25,8 @@ define( [ "jquery", "cookie" ], function(){
 			this.path = $( ".details_span_path" );
 			// 基本信息处名称
 			this.name_ch = $( ".full_name_nzh" );
+			// 商品id存一哈
+			this.ID = $( ".details_magnifier" );
 			// 判断
 			// 获取cookie
 			if( $.cookie( "goods" ) ){
@@ -52,11 +54,12 @@ define( [ "jquery", "cookie" ], function(){
 					_this.name_en.html( item.title );
 					_this.title.html( item.describe );
 					let sales = parseInt( item.price / num );
-					let percent = ( item.price / ( sales + parseInt( item.price ) ) * 10 ). toFixed( 2 );
-					_this.sale_off.html( "价值：" + ( sales + parseInt( item.price ) ) + "，优惠折扣：" + percent + "折。" ); 
+					let percent = parseInt( item.price / ( sales + parseInt( item.price ) ) * 100 );
+					_this.sale_off.html( "价值：" + ( sales + parseInt( item.price ) ) + "，优惠折扣：" + percent + "%。（注明：VS956503惠选套装不带有礼盒包装。）" ); 
 					_this.path.html( item.describe );
 					_this.name_ch.html( "品牌: " + item.brand + " " +item.title );
 					_this.brand_img.attr( "src", item.img_brand );
+					_this.ID.attr( "goodsID", item.id );
 					return false;
 				} else {
 
