@@ -60,7 +60,7 @@ define( [ "jquery", "cookie" ], function(){
 				// 若不存在,则创建结构
 				if( !flag ){
 					let a = {
-						goodsid: _this.ID,
+						goodsID: _this.ID,
 						goodsCount: _this.count,
 						giftType: _this.type
 					};
@@ -68,17 +68,19 @@ define( [ "jquery", "cookie" ], function(){
 				};
 				// 更新cooKie
 				sCookie = JSON.stringify( aCookie );
-				$.cookie( "cart", sCookie );
+				$.cookie( "cart", sCookie, {
+					expires: 20,
+					path: "/"
+				} );
 			} else {
 				// 不存在  就直接创建cookie
 				let str = '[{"goodsID":"'+this.ID+'","goodsCount":"'+this.count+'","giftType":"'+this.type+'"}]';
 				$.cookie( "cart", str, {
-					expires: 20
+					expires: 20,
+					path: "/"
 				} );
 			};
-
-
-			console.log( $.cookie( "cart" ) );
+			$( "#tip" ).fadeIn();
 		};
 	};
 	return new AddCart();

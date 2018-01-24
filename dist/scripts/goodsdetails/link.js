@@ -6,36 +6,34 @@ define( [ "jquery" ], function(){
 		};
 		init(){
 			// 获取跳转的元素
-			this.top_a1 = $( ".top_login" );
-			this.top_a2 = $( ".top_register" );
-			this.logo = $( ".logo" );
 			this.details_index = $( ".details_index" );
 			this.details_goods_list = $( ".details_goods_list" );
-			this.shop_login = $( ".shop_login" );
+
+			this.jxgw = $( ".jxgw" );
+			this.ckgwc = $( ".ckgwc" );
+
 
 			// 添加跳转功能
 			
-			this.logo.on( "click", $.proxy( this.to_index, this ) );
 			this.details_index.on( "click", $.proxy( this.to_index, this ) );
-
+			this.jxgw.on( "click", $.proxy( this.to_list, this ) );
 			this.details_goods_list.on( "click", $.proxy( this.to_list, this ) );
 
-			this.shop_login.on( "click", $.proxy( this.to_login, this ) );
-			this.top_a1.on( "click", $.proxy( this.to_login, this ) );
+			this.ckgwc.on( "click", $.proxy( this.to_cart, this ) );
 
-			this.top_a2.on( "click", $.proxy( this.to_register, this ) );
 		};
 		to_index(){
 			self.location.href = "http://localhost:8888/index.html";
 		};
-		to_list(){
+		to_list( e ){
 			self.location.href = "http://localhost:8888/html/commodity_list.html";
+			if( $( e.target ).attr( "class" ) === "jxgw" ){
+				$( "#tip" ).fadeOut();
+			};
 		};
-		to_login(){
-			self.location.href = "http://localhost:8888/html/login.html";
-		};
-		to_register(){
-			self.location.href = "http://localhost:8888/html/register.html";
+		to_cart(){
+			self.location.href = "http://localhost:8888/html/shop_cart.html";
+			$( "#tip" ).fadeOut();
 		};
 	};
 	return new Link();

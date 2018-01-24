@@ -1,6 +1,6 @@
 /* 业务逻辑页面 */
 require( [ "scripts/index/config.js" ], function(){
-	require( [ "jquery", "cookie", "islogin", "rendering", "banner", "picks", "fixed", "search", "fixed_s", "brands", "blist", "lamp", "link" ], function( $, cookie, islogin, rendering, banner, picks, fixed, search, s2, brands, blist, lamp, link ){
+	require( [ "jquery", "cookie", "islogin", "rendering", "banner", "picks", "fixed", "search", "fixed_s", "brands", "blist", "lamp", "link", "cart", "href" ], function( $, cookie, islogin, rendering, banner, picks, fixed, search, s2, brands, blist, lamp, link, cart, href ){
 		// 判断登录状态
 		// islogin;
 
@@ -23,5 +23,10 @@ require( [ "scripts/index/config.js" ], function(){
 		lamp;
 		// 链接
 		link.init();
+		// 购物车显示
+		cart;
+
+		// 跳转
+		href;
 	} );
 } );

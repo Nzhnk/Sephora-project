@@ -5,6 +5,8 @@ requirejs.config( {
 		"cookie" : "../scripts/common/jquery.cookie",
 		"loading" : "../scripts/goodslist/loading",
 		"tabpage" : "../scripts/goodslist/tabpage",
-		"view" : "../scripts/goodslist/view" 
+		"cart" : "../scripts/common/cart",
+		"view" : "../scripts/goodslist/view",
+		"href" : "../scripts/common/href" 
 	}
 } );

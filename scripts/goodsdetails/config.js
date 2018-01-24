@@ -7,6 +7,8 @@ requirejs.config( {
 		"glass" : "../scripts/goodsdetails/glass",
 		"count" : "../scripts/goodsdetails/addcount",
 		"add" : "../scripts/goodsdetails/add_to_cart",
-		"link" : "../scripts/goodsdetails/link"
+		"link" : "../scripts/goodsdetails/link",
+		"cart" : "../scripts/common/cart",
+		"href" : "../scripts/common/href" 
 	}
 } );

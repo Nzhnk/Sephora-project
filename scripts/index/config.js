@@ -13,6 +13,8 @@ requirejs.config( {
 		"brands" : "scripts/index/brand_letter",
 		"blist" : "scripts/index/brands_list",
 		"lamp" : "scripts/index/lamp",
-		"link" : "scripts/index/link"
+		"link" : "scripts/index/link",
+		"cart" : "scripts/common/cart",
+		"href" : "scripts/common/href"
 	}
 } );

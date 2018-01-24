@@ -241,20 +241,42 @@ define( [ "jquery", "cookie" ], function(){
 			};
 		};
 		true_p( userphone, password ){
-			if( $.cookie( userphone ) ){
-				this.flag = false;
-				this.is_phone.parent()
-				.css( "borderBottomColor", "#ff0700" )
-				.find( "em" ).css( {
-					backgroundPosition : "-20px -36px",
-					display : "block"
+			if( $.cookie( "userName" ) ){
+				let aCookie = JSON.parse( $.cookie( "userName" ) );
+				let _this = this;
+				$( aCookie ).each( function( index, item ){
+					if( userphone == item.userphone ){
+						_this.flag = false;
+						_this.is_phone.parent()
+						.css( "borderBottomColor", "#ff0700" )
+						.find( "em" ).css( {
+							backgroundPosition : "-20px -36px",
+							display : "block"
+						} );
+						_this.errot_msg( "用户名已存在!" );
+						// 判断提示信息是否出现
+						if( _this.is_phone.parent().parent().find( ".error_tip" ).find( "span" ).length > 0 ){
+							return;
+						};
+						_this.is_phone.parent().parent().find( ".error_tip" ).append( _this.div, _this.span );
+						return;
+					};
 				} );
-				this.errot_msg( "用户名已存在!" );
-				this.is_phone.parent().parent().find( ".error_tip" ).append( this.div, this.span );
-				return;
+				if( this.flag ){
+					let a = {
+						userphone :userphone,
+						password : password
+					};
+					aCookie.push( a );
+				}
+				sCookie = JSON.stringify( aCookie );
+				$.cookie( "userName", sCookie, {
+					expires:20,  
+				    path:'/'
+				} );
 			} else {
-				let zh = '{"userphone":"'+userphone+'","password":"'+password+'"}';
-				$.cookie( userphone , zh, {
+				let zh = '[{"userphone":"'+userphone+'","password":"'+password+'"}]';
+				$.cookie( "userName" , zh, {
 				    expires:20,  
 				    path:'/'
 				} );　

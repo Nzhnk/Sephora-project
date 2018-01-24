@@ -44,6 +44,16 @@ img {
   width: 1190px;
   margin: 0 auto; }
 
+/* 禁止文本选择 */
+body {
+  -moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
 /* footer 底部 */
 #footer {
   background: #fff; }
@@ -145,117 +155,7 @@ img {
     height: 42px;
     vertical-align: middle; }
 
-body {
-  line-height: 16px;
-  color: #000;
-  font-size: 12px;
-  -webkit-text-size-adjust: none;
-  font-family: arial,Microsoft YaHei,tahoma,Hiragino Sans GB,\\5b8b\4f53,sans-serif;
-  min-width: 1190px; }
-
-#top {
-  height: 30px;
-  line-height: 30px;
-  background-color: #000;
-  font-size: 12px; }
-
-.top_con {
-  height: 30px; }
-
-.top_left {
-  float: left;
-  height: 30px; }
-  .top_left p, .top_left a, .top_left i {
-    float: left;
-    color: #fff; }
-  .top_left p, .top_left a {
-    margin: 0 12px; }
-  .top_left a:hover {
-    color: #e00; }
-  .top_left i {
-    width: 1px;
-    height: 16px;
-    background-color: #fff;
-    margin-top: 7px; }
-
-.top_center {
-  width: 230px;
-  height: 30px;
-  float: left;
-  position: relative;
-  overflow: hidden;
-  margin-left: 50px; }
-  .top_center a {
-    display: block;
-    position: absolute;
-    top: 30px;
-    color: #fff;
-    line-height: 30px; }
-    .top_center a:hover {
-      color: #e00; }
-
-.top_right {
-  height: 30px;
-  float: right; }
-  .top_right .top_my_sephora, .top_right .top_vip_club, .top_right .top_phone_sephora, .top_right .top_beauty, .top_right .top_help {
-    float: left;
-    margin-left: 22px;
-    position: relative; }
-  .top_right .my_sephora, .top_right .vip_club, .top_right .phone_sephora {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    margin-right: 6px;
-    background: url(../images/index/icon/my-sephora.png) no-repeat;
-    background-size: 100% 100%;
-    vertical-align: middle;
-    margin-top: -2px; }
-  .top_right .top_arrow_icon {
-    display: inline-block;
-    width: 9px;
-    height: 4px;
-    background: url(../images/index/sprite/top_angle.png) no-repeat;
-    margin-left: 5px;
-    background-position: -3px -16px;
-    margin-bottom: 3px; }
-  .top_right .vip_club {
-    background: url(../images/index/icon/vip-club.png) no-repeat; }
-  .top_right .phone_sephora {
-    width: 7px;
-    margin-right: 2px;
-    background: url(../images/index/icon/mobile-sephora.png) no-repeat; }
-  .top_right a {
-    color: #fff; }
-    .top_right a:hover {
-      color: #e00; }
-  .top_right .top_my_order {
-    position: absolute;
-    width: 88px;
-    text-align: center;
-    border: 1px solid #c8c8c8;
-    cursor: pointer;
-    display: none;
-    background: #fff;
-    z-index: 9; }
-    .top_right .top_my_order:hover {
-      background-color: #eeeeee;
-      color: #ee0000; }
-    .top_right .top_my_order:after {
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 7px;
-      background: url(../images/index/sprite/top_angle.png) no-repeat;
-      content: "";
-      top: -7px; }
-
-.top_my_sephora:hover .top_my_order {
-  display: block; }
-
-.top_my_sephora:hover .top_arrow_icon {
-  transform-origin: center;
-  transform: rotateZ(180deg); }
-
+/* head */
 #head {
   background-color: #fff;
   height: 120px; }
@@ -370,7 +270,6 @@ body {
         vertical-align: middle; }
   .top_cart .top_cart_nologin {
     width: 415px;
-    height: 115px;
     box-sizing: border-box;
     border: 1px solid #ddd;
     position: absolute;
@@ -389,7 +288,8 @@ body {
     .top_cart .top_cart_nologin .top_cart_msg {
       float: left;
       width: 258px;
-      margin-left: 18px; }
+      margin-left: 18px;
+      margin-bottom: 25px; }
       .top_cart .top_cart_nologin .top_cart_msg span {
         display: block;
         font-size: 14px;
@@ -524,6 +424,316 @@ body {
   display: block;
   float: right;
   margin-top: -5px; }
+
+#top {
+  height: 30px;
+  line-height: 30px;
+  background-color: #000;
+  font-size: 12px; }
+
+.top_con {
+  height: 30px; }
+
+.top_left {
+  float: left;
+  height: 30px; }
+  .top_left p, .top_left a, .top_left i {
+    float: left;
+    color: #fff; }
+  .top_left p, .top_left a {
+    margin: 0 12px; }
+  .top_left a:hover {
+    color: #e00; }
+  .top_left i {
+    width: 1px;
+    height: 16px;
+    background-color: #fff;
+    margin-top: 7px; }
+  .top_left .user_name:hover {
+    color: #fff;
+    cursor: text; }
+  .top_left .user_name span {
+    float: left; }
+  .top_left .user_img {
+    display: inline-block;
+    width: 22px;
+    height: 16px;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-top: 9px;
+    background: url(../images/index/icon/card-pink.png) no-repeat; }
+
+.top_center {
+  width: 230px;
+  height: 30px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  margin-left: 50px; }
+  .top_center a {
+    display: block;
+    position: absolute;
+    top: 30px;
+    color: #fff;
+    line-height: 30px; }
+    .top_center a:hover {
+      color: #e00; }
+
+.top_right {
+  height: 30px;
+  float: right; }
+  .top_right .top_my_sephora, .top_right .top_vip_club, .top_right .top_phone_sephora, .top_right .top_beauty, .top_right .top_help {
+    float: left;
+    margin-left: 22px;
+    position: relative; }
+  .top_right .my_sephora, .top_right .vip_club, .top_right .phone_sephora {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 6px;
+    background: url(../images/index/icon/my-sephora.png) no-repeat;
+    background-size: 100% 100%;
+    vertical-align: middle;
+    margin-top: -2px; }
+  .top_right .top_arrow_icon {
+    display: inline-block;
+    width: 9px;
+    height: 4px;
+    background: url(../images/index/sprite/top_angle.png) no-repeat;
+    margin-left: 5px;
+    background-position: -3px -16px;
+    margin-bottom: 3px; }
+  .top_right .vip_club {
+    background: url(../images/index/icon/vip-club.png) no-repeat; }
+  .top_right .phone_sephora {
+    width: 7px;
+    margin-right: 2px;
+    background: url(../images/index/icon/mobile-sephora.png) no-repeat; }
+  .top_right a {
+    color: #fff; }
+    .top_right a:hover {
+      color: #e00; }
+  .top_right .top_my_order {
+    position: absolute;
+    width: 88px;
+    text-align: center;
+    border: 1px solid #c8c8c8;
+    cursor: pointer;
+    display: none;
+    background: #fff;
+    z-index: 9; }
+    .top_right .top_my_order:hover {
+      background-color: #eeeeee;
+      color: #ee0000; }
+    .top_right .top_my_order:after {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 7px;
+      background: url(../images/index/sprite/top_angle.png) no-repeat;
+      content: "";
+      top: -7px; }
+
+.top_my_sephora:hover .top_my_order {
+  display: block; }
+
+.top_my_sephora:hover .top_arrow_icon {
+  transform-origin: center;
+  transform: rotateZ(180deg); }
+
+/* 购物车 */
+.no_anything {
+  float: left;
+  width: 258px;
+  margin-left: 25px;
+  margin-top: 25px;
+  display: none;
+  margin-bottom: 45px; }
+  .no_anything span {
+    font-size: 12px;
+    color: #858585; }
+
+.login_goods {
+  display: none; }
+  .login_goods p {
+    width: 100%;
+    font-size: 12px;
+    color: #858585;
+    text-align: left;
+    text-indent: 24px;
+    font-weight: bold;
+    border-bottom: 1px solid #858585; }
+
+.new_add {
+  overflow: auto;
+  max-height: 180px; }
+  .new_add ul li {
+    width: 100%;
+    float: left;
+    padding: 10px 15px;
+    box-sizing: border-box; }
+    .new_add ul li .new_add_img {
+      display: block;
+      float: left;
+      margin: 10px; }
+    .new_add ul li .new_add_describe {
+      float: left;
+      font-size: 12px; }
+      .new_add ul li .new_add_describe .new_add_title, .new_add ul li .new_add_describe .new_add_des {
+        display: block;
+        width: 180px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: left; }
+    .new_add ul li .new_add_r {
+      float: right; }
+      .new_add ul li .new_add_r .new_add_r_price {
+        font-size: 12px;
+        color: #e00; }
+      .new_add ul li .new_add_r .new_add_r_count {
+        font-size: 12px; }
+    .new_add ul li .new_add_delete {
+      display: block;
+      text-align: right;
+      font-size: 12px;
+      color: #909090; }
+
+.xiaoji {
+  font-size: 12px;
+  height: 50px;
+  line-height: 34px;
+  letter-spacing: 1px;
+  background: #f7f7f7; }
+  .xiaoji span {
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 20px; }
+    .xiaoji span b {
+      color: #e00; }
+  .xiaoji a {
+    float: right;
+    padding: 0 5px;
+    color: #fff;
+    background: #000;
+    height: 34px;
+    margin: 8px 20px; }
+
+body {
+  line-height: 16px;
+  color: #000;
+  font-size: 12px;
+  -webkit-text-size-adjust: none;
+  font-family: arial,Microsoft YaHei,tahoma,Hiragino Sans GB,\\5b8b\4f53,sans-serif;
+  min-width: 1190px; }
+
+#top {
+  height: 30px;
+  line-height: 30px;
+  background-color: #000;
+  font-size: 12px; }
+
+.top_con {
+  height: 30px; }
+
+.top_left {
+  float: left;
+  height: 30px; }
+  .top_left p, .top_left a, .top_left i {
+    float: left;
+    color: #fff; }
+  .top_left p, .top_left a {
+    margin: 0 12px; }
+  .top_left a:hover {
+    color: #e00; }
+  .top_left i {
+    width: 1px;
+    height: 16px;
+    background-color: #fff;
+    margin-top: 7px; }
+
+.top_center {
+  width: 230px;
+  height: 30px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  margin-left: 50px; }
+  .top_center a {
+    display: block;
+    position: absolute;
+    top: 30px;
+    color: #fff;
+    line-height: 30px; }
+    .top_center a:hover {
+      color: #e00; }
+
+.top_right {
+  height: 30px;
+  float: right; }
+  .top_right .top_my_sephora, .top_right .top_vip_club, .top_right .top_phone_sephora, .top_right .top_beauty, .top_right .top_help {
+    float: left;
+    margin-left: 22px;
+    position: relative; }
+  .top_right .my_sephora, .top_right .vip_club, .top_right .phone_sephora {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 6px;
+    background: url(../images/index/icon/my-sephora.png) no-repeat;
+    background-size: 100% 100%;
+    vertical-align: middle;
+    margin-top: -2px; }
+  .top_right .top_arrow_icon {
+    display: inline-block;
+    width: 9px;
+    height: 4px;
+    background: url(../images/index/sprite/top_angle.png) no-repeat;
+    margin-left: 5px;
+    background-position: -3px -16px;
+    margin-bottom: 3px; }
+  .top_right .vip_club {
+    background: url(../images/index/icon/vip-club.png) no-repeat; }
+  .top_right .phone_sephora {
+    width: 7px;
+    margin-right: 2px;
+    background: url(../images/index/icon/mobile-sephora.png) no-repeat; }
+  .top_right a {
+    color: #fff; }
+    .top_right a:hover {
+      color: #e00; }
+  .top_right .top_my_order {
+    position: absolute;
+    width: 88px;
+    text-align: center;
+    border: 1px solid #c8c8c8;
+    cursor: pointer;
+    display: none;
+    background: #fff;
+    z-index: 9; }
+    .top_right .top_my_order:hover {
+      background-color: #eeeeee;
+      color: #ee0000; }
+    .top_right .top_my_order:after {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 7px;
+      background: url(../images/index/sprite/top_angle.png) no-repeat;
+      content: "";
+      top: -7px; }
+
+.top_my_sephora:hover .top_my_order {
+  display: block; }
+
+.top_my_sephora:hover .top_arrow_icon {
+  transform-origin: center;
+  transform: rotateZ(180deg); }
+
+#head {
+  background-color: #fff;
+  height: 120px; }
 
 /* fixed_top */
 #fixed_top {
@@ -1012,3 +1222,59 @@ body {
       width: 100%;
       font-size: 12px;
       margin-top: 25px; }
+
+/* tip */
+#tip {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  display: none; }
+  #tip .tip_con {
+    width: 450px;
+    height: 240px;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto; }
+    #tip .tip_con p {
+      font-size: 20px;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+      letter-spacing: 2px; }
+      #tip .tip_con p i {
+        display: inline-block;
+        margin: 0 30px;
+        width: 30px;
+        height: 30px;
+        background-position: 0 0;
+        background-image: url(../images/index/icon/confirmProduct-icon.png);
+        content: "";
+        vertical-align: middle; }
+      #tip .tip_con p span {
+        display: inline-block; }
+    #tip .tip_con .btns span {
+      float: left;
+      width: 160px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      color: #fff;
+      background-color: #000;
+      font-size: 18px;
+      margin: 50px 32px;
+      cursor: pointer;
+      transition: all 1s; }
+      #tip .tip_con .btns span:hover {
+        background-color: #e00; }
+    #tip .tip_con .btns .jxgw {
+      background-color: #e00; }
+      #tip .tip_con .btns .jxgw:hover {
+        background-color: #000; }

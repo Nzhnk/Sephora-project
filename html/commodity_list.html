@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/commodity_list.css">
 </head>
 <body>
-	<!-- top -->
+		<!-- top -->
 	<div id="top">
 		<!-- top_con -->
 		<div class="top_con">
@@ -16,7 +16,9 @@
 				<p>欢迎来到丝芙兰</p>
 				<!-- login -->
 				<a href="javascript:;" class="top_login">请登录</a>
+				<!-- <a href="javascript:;" class="user_name"><span>你hao</span><i class="user_img"></i></a> -->
 				<i></i>
+				<!-- <a href="javascript:;" class="user_out">退出</a> -->
 				<!-- register -->
 				<a href="javascript:;" class="top_register">免费注册</a>
 				<!-- first_login -->
@@ -109,12 +111,46 @@
 							件
 						</a>
 					</div>
-					<!-- 未登录状态的购物车 -->
+					
 					<div class="top_cart_nologin">
-						<i></i>
-						<div class="top_cart_msg">
-							<span>购物车内暂时没有商品，登录后将显示您之前加入的商品 </span>
-							<a href="javascript:;">登录</a>
+						<div class="login_status clearfix">
+							<!-- 未登录状态的购物车 -->
+							<i></i>
+							<div class="top_cart_msg">
+								<span>购物车内暂时没有商品，登录后将显示您之前加入的商品 </span>
+								<a href="javascript:;">登录</a>
+							</div>
+							<!-- 登录但是未购物的购物车 -->
+							<div class="no_anything">
+								<span>购物车空空的哦~,去看看心仪的商品吧~</span>
+							</div>
+						</div>
+						<!-- 登陆后  购物车有商品 -->
+						<div class="login_goods">
+							<p>最新加入的商品</p>
+							<div class="new_add">
+								<ul class="clearfix">
+									<li>
+										<a href="javascript:;" class="new_add_img">
+											<img src="../images/index/goods/goods_cnxh_01.jpg" style="width: 48px;height: 48px;">
+										</a>
+										<div class="new_add_describe">
+											<span class="new_add_title">丝芙兰唇膏精选</span>
+											<span class="new_add_des">丝芙兰唇膏精选</span>
+										</div>
+										<div class="new_add_r">
+											<span class="new_add_r_price">¥<b>1200</b></span>
+											<span class="new_add_r_count">x<b>1</b></span>
+											<a href="javascript:;" class="new_add_delete">删除</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="xiaoji">
+								<span class="xj_01">共<b>2</b>件商品</span>
+								<span class="xj_02">共计<b>819.00</b></span>
+								<a href="javascript:;" class="to_shop_cart">去购物车</a>
+							</div>
 						</div>
 					</div>
 				</div>

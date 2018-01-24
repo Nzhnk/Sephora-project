@@ -8,6 +8,7 @@ define( [ "jquery", "cookie" ], function(){
 			// console.log(123);
 			// 获取需要渲染的dom元素
 			this.divs = $( ".like_box " );
+
 			// 获取渲染数据
 			let data_url = {
 				url : "../data/list_data.json",
@@ -15,6 +16,7 @@ define( [ "jquery", "cookie" ], function(){
 			};
 			$.ajax( data_url ).then( $.proxy( this.rendring_page, this ) );
 		};
+		
 		rendring_page( res ){
 			
 			// 给数据排序,将人气最高的受欢迎的产品推荐到猜你喜欢模块

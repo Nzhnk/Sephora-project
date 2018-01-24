@@ -78,36 +78,39 @@ define( [ "jquery" ], function(){
 
 
 			// 获取cookie
-			let sCookie = $.cookie( user );
+			let sCookie = $.cookie( "userName" );
 			let obj = JSON.parse( sCookie );
 			// 模拟登录成功
 			if( flag ){
-				if( obj.userphone === user && obj.password === pass ){
-					this.tip.children().css( {
-						display : "none"
-					} );
-					this.user.parent().find( "b" ).attr( "class", "success" ).css( {
-						display : "block"
-					} );
-					this.pass.parent().find( "b" ).attr( "class", "success" ).css( {
-						display : "block"
-					} );
-					let _s = self;
-					setTimeout( function(){
-						_s.location.href= "http://localhost:8888/index.html";
-						
-					}, 500 );
-				} else {
-					$( ".tip_03" ).css( {
-						display : "block"
-					} );
-					this.pass.parent().find( "b" ).attr( "class", "error" ).css( {
-						display : "block"
-					} );
-					this.user.parent().find( "b" ).attr( "class", "error" ).css( {
-						display : "block"
-					} );
-				};
+				let _this = this;
+				let _s = self;
+				$( obj ).each( function( index, item ){
+					if( item.userphone === user && item.password === pass ){
+						_this.tip.children().css( {
+							display : "none"
+						} );
+						_this.user.parent().find( "b" ).attr( "class", "success" ).css( {
+							display : "block"
+						} );
+						_this.pass.parent().find( "b" ).attr( "class", "success" ).css( {
+							display : "block"
+						} );
+						setTimeout( function(){
+							_s.location.href= "http://localhost:8888/index.html";
+							
+						}, 500 );
+					} else {
+						$( ".tip_03" ).css( {
+							display : "block"
+						} );
+						_this.pass.parent().find( "b" ).attr( "class", "error" ).css( {
+							display : "block"
+						} );
+						_this.user.parent().find( "b" ).attr( "class", "error" ).css( {
+							display : "block"
+						} );
+					};
+				} );
 			};
 		};
 		allow_sub(){
