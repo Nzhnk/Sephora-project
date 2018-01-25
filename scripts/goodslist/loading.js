@@ -18,14 +18,12 @@ define( [ "jquery" ], function(){
 		/* 渲染列表 */
 		render( res ){
 			this.data = $( res );
-			console.log(res);
 			// 排序实验
 			let newArray = res;
 			function sortprice(a,b){  
                return a.popularity-b.popularity;  
             }  
             newArray.sort(sortprice);
-            console.log(newArray);
 
 
 			let _this = this;

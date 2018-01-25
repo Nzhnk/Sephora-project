@@ -227,6 +227,7 @@ body{
             float: left;
             padding-right:8px;
             color: #acacac;
+            font-size: 12px;
             &:hover{
                 color: $fz;
             }
@@ -325,6 +326,9 @@ body{
             display: block;
         }
     }
+}
+.to_shop_cart:hover{
+    background-color:#e00;
 }
 /* head_bottom */
 .head_bottom{
@@ -500,6 +504,20 @@ body{
         margin-left: 10px;
         margin-top: 9px;
         background: url(../images/index/icon/card-pink.png) no-repeat;
+    }
+    .islogin_false{
+        float: left;
+    }
+    .islogin_true{
+        float: left;
+        display: none;
+        .login_bar{
+            width: 1px;
+            height: 16px;
+            background-color: #fff;
+            float: left;
+            margin-top: 7px;
+        }
     }
 }
 .top_center{
@@ -688,5 +706,6 @@ body{
         background: #000;
         height: 34px;
         margin: 8px 20px;
+        transition: all 1s;
     }
 }

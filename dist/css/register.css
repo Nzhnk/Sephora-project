@@ -233,7 +233,8 @@ body {
     .top_search .top_hot a {
       float: left;
       padding-right: 8px;
-      color: #acacac; }
+      color: #acacac;
+      font-size: 12px; }
       .top_search .top_hot a:hover {
         color: #e00; }
 
@@ -313,6 +314,9 @@ body {
     z-index: 15; }
   .top_cart:hover .top_cart_nologin {
     display: block; }
+
+.to_shop_cart:hover {
+  background-color: #e00; }
 
 /* head_bottom */
 .head_bottom {
@@ -462,6 +466,17 @@ body {
     margin-left: 10px;
     margin-top: 9px;
     background: url(../images/index/icon/card-pink.png) no-repeat; }
+  .top_left .islogin_false {
+    float: left; }
+  .top_left .islogin_true {
+    float: left;
+    display: none; }
+    .top_left .islogin_true .login_bar {
+      width: 1px;
+      height: 16px;
+      background-color: #fff;
+      float: left;
+      margin-top: 7px; }
 
 .top_center {
   width: 230px;
@@ -618,7 +633,8 @@ body {
     color: #fff;
     background: #000;
     height: 34px;
-    margin: 8px 20px; }
+    margin: 8px 20px;
+    transition: all 1s; }
 
 /* head */
 #head {

@@ -1,6 +1,6 @@
 /* 购物车业务逻辑 */
 require( [ "../scripts/cart/config.js" ], function(){
-	require( [ "jquery", "cookie", "rend", "incident", "status", "clink" ], function( $, cookie, rend, incident, status, clink ){
+	require( [ "jquery", "cookie", "rend", "incident", "status", "clink", "cart" ], function( $, cookie, rend, incident, status, clink, cart){
 		// 通信测试 => ok
 		
 		// 渲染页面
@@ -14,5 +14,8 @@ require( [ "../scripts/cart/config.js" ], function(){
 
 		// 跳转
 		clink;
+
+		// 判断登录
+		cart;
 	} );
 } );

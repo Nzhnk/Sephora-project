@@ -12,7 +12,7 @@ define( [ "jquery", "cookie" ], function(){
 			this.add_btn = $( ".add_btn" );
 			
 			
-						let _this = this;
+			let _this = this;
 			this.lis.each( function( index ){
 				_this.lis.eq( index ).on( "click", $.proxy( _this.change, _this ) );
 			} );
@@ -25,62 +25,69 @@ define( [ "jquery", "cookie" ], function(){
 			.siblings().removeClass( "format_act" );
 		};
 		to_buy(){
-			// 获取对应商品的id
-			this.ID = $( ".details_magnifier" ).attr( "goodsid" );
-			// console.log( this.ID );
-			// 获取礼品规格类型
-			this.type = $( ".format_act span" ).text();
-			console.log(this.type)
-			// 获取数量
-			this.count = parseInt( $( ".count_num" ).val() );
-			// console.log(this.count)
-			// 判断是否存在该cookie
-			if( $.cookie( "cart" ) ){
-				// 存在,继续判断是否存在需要购买的商品
-				let sCookie = $.cookie( "cart" );
-				// console.log( sCookie)
-				let aCookie = JSON.parse( sCookie );
-				console.log( aCookie );
-				// 假设不存在该商品
-				let flag = false;
-				let _this = this;
-				// 判断是否存在
-				aCookie.forEach( function( item ){
-					if( _this.ID == item.goodsID ){
-						// 存在该商品 
-						let n = parseInt( item.goodsCount );
-						n += _this.count;
-						item.goodsCount = n;
-						// 证明存在
-						flag = true;
-					};
-				} );
-					
+			// 先判断是否登录
+			if( $.cookie( "userName" ) ){
+				// 获取对应商品的id
+				this.ID = $( ".details_magnifier" ).attr( "goodsid" );
+				// console.log( this.ID );
+				// 获取礼品规格类型
+				this.type = $( ".format_act span" ).text();
+				console.log(this.type)
+				// 获取数量
+				this.count = parseInt( $( ".count_num" ).val() );
+				// console.log(this.count)
+				// 判断是否存在该cookie
+				if( $.cookie( "cart" ) ){
+					// 存在,继续判断是否存在需要购买的商品
+					let sCookie = $.cookie( "cart" );
+					// console.log( sCookie)
+					let aCookie = JSON.parse( sCookie );
+					console.log( aCookie );
+					// 假设不存在该商品
+					let flag = false;
+					let _this = this;
+					// 判断是否存在
+					aCookie.forEach( function( item ){
+						if( _this.ID == item.goodsID ){
+							// 存在该商品 
+							let n = parseInt( item.goodsCount );
+							n += _this.count;
+							item.goodsCount = n;
+							// 证明存在
+							flag = true;
+						};
+					} );
+						
 
-				// 若不存在,则创建结构
-				if( !flag ){
-					let a = {
-						goodsID: _this.ID,
-						goodsCount: _this.count,
-						giftType: _this.type
+					// 若不存在,则创建结构
+					if( !flag ){
+						let a = {
+							goodsID: _this.ID,
+							goodsCount: _this.count,
+							giftType: _this.type
+						};
+						aCookie.push( a );
 					};
-					aCookie.push( a );
+					// 更新cooKie
+					sCookie = JSON.stringify( aCookie );
+					$.cookie( "cart", sCookie, {
+						expires: 20,
+						path: "/"
+					} );
+				} else {
+					// 不存在  就直接创建cookie
+					let str = '[{"goodsID":"'+this.ID+'","goodsCount":"'+this.count+'","giftType":"'+this.type+'"}]';
+					$.cookie( "cart", str, {
+						expires: 20,
+						path: "/"
+					} );
 				};
-				// 更新cooKie
-				sCookie = JSON.stringify( aCookie );
-				$.cookie( "cart", sCookie, {
-					expires: 20,
-					path: "/"
-				} );
+				$( "#tip" ).fadeIn();
 			} else {
-				// 不存在  就直接创建cookie
-				let str = '[{"goodsID":"'+this.ID+'","goodsCount":"'+this.count+'","giftType":"'+this.type+'"}]';
-				$.cookie( "cart", str, {
-					expires: 20,
-					path: "/"
-				} );
+				// 如果未登录,则直接跳转等登录界面;
+				self.location.href = "http://localhost:8888/html/login.html";
 			};
-			$( "#tip" ).fadeIn();
+			
 		};
 	};
 	return new AddCart();

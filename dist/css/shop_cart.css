@@ -233,7 +233,8 @@ body {
     .top_search .top_hot a {
       float: left;
       padding-right: 8px;
-      color: #acacac; }
+      color: #acacac;
+      font-size: 12px; }
       .top_search .top_hot a:hover {
         color: #e00; }
 
@@ -313,6 +314,9 @@ body {
     z-index: 15; }
   .top_cart:hover .top_cart_nologin {
     display: block; }
+
+.to_shop_cart:hover {
+  background-color: #e00; }
 
 /* head_bottom */
 .head_bottom {
@@ -462,6 +466,17 @@ body {
     margin-left: 10px;
     margin-top: 9px;
     background: url(../images/index/icon/card-pink.png) no-repeat; }
+  .top_left .islogin_false {
+    float: left; }
+  .top_left .islogin_true {
+    float: left;
+    display: none; }
+    .top_left .islogin_true .login_bar {
+      width: 1px;
+      height: 16px;
+      background-color: #fff;
+      float: left;
+      margin-top: 7px; }
 
 .top_center {
   width: 230px;
@@ -618,7 +633,8 @@ body {
     color: #fff;
     background: #000;
     height: 34px;
-    margin: 8px 20px; }
+    margin: 8px 20px;
+    transition: all 1s; }
 
 body {
   font-family: arial,Microsoft YaHei,tahoma,Hiragino Sans GB,\\5b8b\4f53,sans-serif;
@@ -791,12 +807,6 @@ body {
 /* main */
 #main {
   background-color: #f5f5f5; }
-  #main .check_em {
-    display: block;
-    width: 14px;
-    cursor: pointer;
-    height: 14px;
-    background: url(../images/index/icon/module_input_checkbox.png) no-repeat -42px 0; }
   #main .em_act1 {
     position: absolute;
     top: 16px;
@@ -805,6 +815,18 @@ body {
     position: absolute;
     top: 68px;
     left: -27px; }
+
+.check_em {
+  display: block;
+  width: 14px;
+  cursor: pointer;
+  height: 14px;
+  background: url(../images/index/icon/module_input_checkbox.png) no-repeat;
+  background-position: -28px 0;
+  z-index: 10; }
+
+.check_em_act {
+  background-position: -42px 0; }
 
 .main_con {
   width: 1190px;
@@ -965,14 +987,10 @@ body {
     .settle_con .all_control em, .settle_con .all_control a, .settle_con .all_control div {
       font-size: 12px;
       color: #474747; }
-    .settle_con .all_control .check_em {
+    .settle_con .all_control .check_03 {
       display: inline-block;
       vertical-align: text-top;
-      margin: 1px 20px 0;
-      background: url(../images/index/icon/module_input_checkbox.png) no-repeat -42px 0;
-      width: 14px;
-      cursor: pointer;
-      height: 14px; }
+      margin: 1px 20px 0; }
     .settle_con .all_control .all_check, .settle_con .all_control .check_delete {
       margin-right: 30px;
       display: inline-block; }
@@ -1079,7 +1097,8 @@ body {
   left: 0;
   right: 0;
   margin: 0 auto;
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.7); }
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.7);
+  z-index: 20; }
 
 /* main_has_goods */
 .main_has_goods {

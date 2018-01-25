@@ -1,0 +1,155 @@
+@import "reset.scss";
+@import "common.scss";
+$black: #000; 
+$white: #fff;  
+$fz: #e00;
+$bg: #f5f5f5;
+body{
+    font-family: arial,Microsoft YaHei,tahoma,Hiragino Sans GB,\\5b8b\4f53,sans-serif;
+    -moz-user-select: none; -khtml-user-select: none; user-select: none;
+    font-size: 12px;
+}
+
+/* head */
+#head{
+	height: 120px;
+}
+.head_con{
+	height: 70px;
+	padding: 25px 0;
+	width: 1190px;
+	margin: 0 auto;
+	h1{
+		float: left;
+		height: 40px;
+		img{
+			height: 30px;
+			margin-top: 5px;
+		}
+		a{
+			display: block;
+		}
+	}
+	.head_process{
+		float: right;
+		position: relative;
+	}
+	.step_wrap{
+		border-bottom: 3px solid #eee;
+		z-index: 10;
+		position: relative;
+		float: left;
+		em{
+			width: 82px;
+			height: 50px;
+			display: block;
+			background-repeat: no-repeat;
+			margin-top: 7px;
+			margin-bottom: 10px;
+			background-image: url(../images/cart/checkout_header_step.png);
+			content: "";
+		}
+	}
+	.step_wrap_01{
+		width: 82px;
+		margin-right: 101px;
+
+        .step_em_01{
+			background-position: -144px 0;
+        }
+	}
+	.step_wrap_02{
+	    width: 123px;
+		margin-right: 101px;
+		.step_em_02{
+			width: 123px;
+			background-position: -124px -50px;
+        }
+	}
+	.step_wrap_03{
+		width: 96px;
+		border-color: #000;
+		.step_em_03{
+			width: 96px;
+			background-position: -14px -100px;
+        }
+	}
+	.step_bar{
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 3px;
+		background-color: #eee;
+		z-index: 1;
+	}
+}
+
+/* pay_ok */
+#pay_ok{
+	width: 100%;
+	height: 500px;
+	background-color: #f5f5f5;
+	position: relative;
+	background-image:url(../images/index/banner/pay_ok.jpg);
+	background-size: 100% 100%;
+	.pay_ok_con{
+		width: 800px;
+		height: 400px;
+		background-color: rgba( 255,255,255,.7);
+		box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.7);
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		margin: auto;
+		transition: all 1s;
+		&:hover{
+			background-color: rgba( 255,255,255,1);
+		}
+		p{
+			font-size: 22px;
+			position:absolute;
+			width: 500px;
+			top: 40%;
+			left: 50%;
+			margin: -16px 0 0 -250px;
+			text-align: center;
+			em{
+				display: inline-block;
+				width: 34px;
+				height: 30px;
+				background: url(../images/index/icon/confirmProduct-icon.png) no-repeat;
+				vertical-align: middle;
+			}
+		}
+		i{
+			position: absolute;
+			bottom: 30px;
+			width: 100px;
+			height: 40px;
+			line-height: 40px;
+			color: #fff;
+			background-color: #000;
+			text-align: center;
+			left: 50%;
+			margin-left: -50px;
+			font-size: 14px;
+			transition: all 1s;
+			cursor: pointer;
+			&:hover{
+				background-color:#e00;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+

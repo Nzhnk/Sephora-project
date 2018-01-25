@@ -1,0 +1,25 @@
+@import "reset.scss";
+@import "common.scss";
+
+/* main */
+#main{
+	width: 100%;
+	overflow: hidden;
+	a{
+		display: block;
+		width: 1920px;
+		img{
+			width: 1920px;
+		}
+	}
+	.ts{
+		height: 174px;
+		a{
+			position: relative;
+		}
+		.fix{
+			position: fixed;
+			top: 0;
+		}
+	}
+}

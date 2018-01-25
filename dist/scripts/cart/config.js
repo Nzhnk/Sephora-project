@@ -6,6 +6,7 @@ requirejs.config( {
 		"rend" : "../scripts/cart/rendring",
 		"incident" : "../scripts/cart/incident",
 		"status" : "../scripts/cart/shop_status",
-		"clink" : "../scripts/cart/link"
+		"clink" : "../scripts/cart/link",
+		"cart" : "../scripts/common/cart"
 	}
 } );

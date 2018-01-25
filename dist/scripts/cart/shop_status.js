@@ -50,7 +50,7 @@ define( [ "jquery", "cookie" ], function(){
 					if( item.goodsID == ite.id ){
 						str += `
 							<div class="goods_single_box clearfix" goods_id="${item.goodsID}">
-								<em  class="check_em em_act2"></em>
+								<em></em>
 								<a href="javascript:;" class="goods_item_img">
 									<img src="${ite.img_mid}" alt="">
 								</a>

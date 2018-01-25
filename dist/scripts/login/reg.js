@@ -1,4 +1,4 @@
-define( [ "jquery" ], function(){
+define( [ "jquery", "cookie" ], function(){
 	class Inspect{
 		constructor(){};
 		init(){
@@ -95,6 +95,9 @@ define( [ "jquery" ], function(){
 						_this.pass.parent().find( "b" ).attr( "class", "success" ).css( {
 							display : "block"
 						} );
+						item.login = true;
+						sCookie = JSON.stringify( obj );
+						$.cookie( "userName", sCookie, { path:'/'} );
 						setTimeout( function(){
 							_s.location.href= "http://localhost:8888/index.html";
 							
@@ -113,9 +116,9 @@ define( [ "jquery" ], function(){
 				} );
 			};
 		};
-		allow_sub(){
+		// allow_sub(){
 
-		};
+		// };
 	};
 	return new Inspect();
 } );

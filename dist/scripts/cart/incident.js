@@ -26,10 +26,10 @@ define( [ "jquery" ], function(){
 			this.rbtn.on( "click", $.proxy( this.div_move, this ) );
 			this.rules.on( "click", $.proxy( this.rules_show, this ) );
 			this.rules_close.on( "click", $.proxy( this.rules_hide, this ) );
-			$( document ).on( "scroll", $.proxy( this.to_fix, this ) );
+			$( window ).on( "scroll", $.proxy( this.to_fix, this ) );
 		};
 		to_fix(){
-			let scrollTop = $( document ).scrollTop();
+			let scrollTop = $( window ).scrollTop();
 			let m_h = this.screen_w + scrollTop;
 
 			if( m_h < this.fix_top ){

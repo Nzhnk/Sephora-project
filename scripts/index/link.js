@@ -8,25 +8,14 @@ define( [ "jquery" ], function(){
 			this.guess = $( ".guessyoulike_show ul li" );
 			// console.log( this.goods, this.picks, this.guess );
 
-			let _this = this;
+			this.goods.on( "click", $.proxy( this.to_list, this ) );
 
-			this.goods.each( function( index ){
-				_this.goods.eq( index ).on( "click", $.proxy( _this.to_list, _this ) );
-			} );
+			this.picks.on( "click", $.proxy( this.to_active, this ) );
 
-			this.picks.each( function( index ){
-				_this.picks.eq( index ).on( "click", $.proxy( _this.to_list, _this ) );
-			} );
-
-			this.guess.each( function( index ){
-				_this.guess.eq( index ).on( "click", $.proxy( _this.to_list, _this ) );
-			} );
+			this.guess.on( "click", $.proxy( this.to_list, this ) );
 		};
-		to_login(){
-			self.location.href = "http://localhost:8888/html/login.html";
-		};
-		to_register(){
-			self.location.href = "http://localhost:8888/html/register.html";
+		to_active(){
+			self.location.href = "http://localhost:8888/html/active.html";
 		};
 		to_list(){
 			self.location.href = "http://localhost:8888/html/commodity_list.html";

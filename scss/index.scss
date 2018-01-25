@@ -776,15 +776,16 @@ body{
                 float: left;
                 position: relative;
                 .fix_search_list{
-                    width: 564px;
+                    width: 540px;
                     height: 240px;
                     position: absolute;
                     background: #fff;
                     top: 37px;
-                    padding: 1px 0;
+                    padding: 1px 0 2px;
                     box-sizing: border-box;
                     border: 1px solid #959595;
                     border-top: none;
+                    overflow: hidden;
                     display: none;
                     li{
                         width: 100%;

@@ -265,17 +265,22 @@ define( [ "jquery", "cookie" ], function(){
 				if( this.flag ){
 					let a = {
 						userphone :userphone,
-						password : password
+						password : password,
+						login: true
 					};
 					aCookie.push( a );
 				}
-				sCookie = JSON.stringify( aCookie );
+				let sCookie = JSON.stringify( aCookie );
 				$.cookie( "userName", sCookie, {
 					expires:20,  
 				    path:'/'
 				} );
+				let _s = self;
+				setTimeout( function(){
+					_s.location.href = "http://localhost:8888/index.html";
+				}, 500 );
 			} else {
-				let zh = '[{"userphone":"'+userphone+'","password":"'+password+'"}]';
+				let zh = '[{"userphone":"'+userphone+'","password":"'+password+'","login": true }]';
 				$.cookie( "userName" , zh, {
 				    expires:20,  
 				    path:'/'
