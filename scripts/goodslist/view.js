@@ -20,7 +20,7 @@ define( [ "jquery", "cookie" ], function(){
 			let sessionC = '{"goodsId":"'+$id+'"}';
 			$.cookie( "goods", sessionC );
 			// 并且跳转
-			self.location.href = "http://localhost:8888/html/commodity_details.html";
+			self.location.href = "commodity_details.html";
 		};
 	};
 	return new View();

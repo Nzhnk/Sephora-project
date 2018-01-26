@@ -11,10 +11,10 @@ define( [ "jquery" ],function(){
 			this.reg.on( "click", $.proxy( this.to_register, this ) );
 		};
 		to_index(){
-			this.jump.attr( "href", "http://localhost:8888/index.html" );
+			self.location.href = "index.html";
 		};
 		to_register(){
-			this.reg.attr( "href", "http://localhost:8888/html/register.html" );
+			self.location.href = "register.html";
 		};
 	};
 	return new Link();

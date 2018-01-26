@@ -19,7 +19,7 @@ define( [ "jquery" ], function(){
 			let _self = self;
 			this.timer = setInterval( function(){
 				if( num <= 0 ){
-					_self.location.href = "http://localhost:8888/index.html";
+					_self.location.href = "index.html";
 					clearInterval( _this.timer );
 				} else {
 					num --;
@@ -29,7 +29,7 @@ define( [ "jquery" ], function(){
 		};
 		to_index(){
 			clearInterval( this.timer );
-			self.location.href = "http://localhost:8888/index.html";
+			self.location.href = "index.html";
 		};
 	};
 	return new Jump();

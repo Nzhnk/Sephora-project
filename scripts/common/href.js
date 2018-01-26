@@ -31,16 +31,16 @@ define( [ "jquery" ], function(){
 
 		};
 		to_index(){
-			self.location.href = "http://localhost:8888/index.html";
+			self.location.href = "index.html";
 		};
 		to_login(){
-			self.location.href = "http://localhost:8888/html/login.html";
+			self.location.href = "login.html";
 		};
 		to_register(){
-			self.location.href = "http://localhost:8888/html/register.html";
+			self.location.href = "register.html";
 		};
 		to_cart(){
-			self.location.href = "http://localhost:8888/html/shop_cart.html";
+			self.location.href = "shop_cart.html";
 		};
 	};
 	return new Href();

@@ -85,7 +85,7 @@ define( [ "jquery", "cookie" ], function(){
 				$( "#tip" ).fadeIn();
 			} else {
 				// 如果未登录,则直接跳转等登录界面;
-				self.location.href = "http://localhost:8888/html/login.html";
+				self.location.href = "login.html";
 			};
 			
 		};

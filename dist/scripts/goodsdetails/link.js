@@ -23,16 +23,16 @@ define( [ "jquery" ], function(){
 
 		};
 		to_index(){
-			self.location.href = "http://localhost:8888/index.html";
+			self.location.href = "index.html";
 		};
 		to_list( e ){
-			self.location.href = "http://localhost:8888/html/commodity_list.html";
+			self.location.href = "commodity_list.html";
 			if( $( e.target ).attr( "class" ) === "jxgw" ){
 				$( "#tip" ).fadeOut();
 			};
 		};
 		to_cart(){
-			self.location.href = "http://localhost:8888/html/shop_cart.html";
+			self.location.href = "shop_cart.html";
 			$( "#tip" ).fadeOut();
 		};
 	};

@@ -27,7 +27,7 @@ define( [ "jquery" ], function(){
 			$( e.delegateTarget ).siblings().removeClass( "pay_act" );
 		};
 		to_cart(){
-			self.location.href = "http://localhost:8888/html/shop_cart.html";
+			self.location.href = "shop_cart.html";
 		};
 		fixed(){
 			let scroll = $( window ).scrollTop();
@@ -38,7 +38,7 @@ define( [ "jquery" ], function(){
 			};
 		};
 		to_end(){
-			self.location.href = "http://localhost:8888/html/end.html";
+			self.location.href = "end.html";
 		};
 	};
 	return new BuyLink();

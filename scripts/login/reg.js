@@ -99,7 +99,7 @@ define( [ "jquery", "cookie" ], function(){
 						sCookie = JSON.stringify( obj );
 						$.cookie( "userName", sCookie, { path:'/'} );
 						setTimeout( function(){
-							_s.location.href= "http://localhost:8888/index.html";
+							_s.location.href= "index.html";
 							
 						}, 500 );
 					} else {

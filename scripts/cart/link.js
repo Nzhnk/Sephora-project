@@ -14,10 +14,10 @@ define( [ "jquery" ], function(){
 
 		};
 		to_index(){
-			self.location.href = "http://localhost:8888/index.html";
+			self.location.href = "index.html";
 		};
 		to_pay(){
-			self.location.href = "http://localhost:8888/html/buy_details.html";
+			self.location.href = "buy_details.html";
 		};
 	};
 	return new Cartlink();

@@ -13,10 +13,10 @@ define( [ "jquery" ], function(){
 			
 		};
 		to_index(){
-			self.location.href = "http://localhost:8888/index.html";
+			self.location.href = "index.html";
 		};
 		to_login(){
-			this.login.attr( "href", "http://localhost:8888/html/login.html" );
+			self.location.href = "login.html";
 		};
 	};
 	return new Links();

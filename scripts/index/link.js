@@ -15,10 +15,10 @@ define( [ "jquery" ], function(){
 			this.guess.on( "click", $.proxy( this.to_list, this ) );
 		};
 		to_active(){
-			self.location.href = "http://localhost:8888/html/active.html";
+			self.location.href = "active.html";
 		};
 		to_list(){
-			self.location.href = "http://localhost:8888/html/commodity_list.html";
+			self.location.href = "commodity_list.html";
 		};
 	};
 	return new Link();

@@ -1,622 +1,622 @@
 {
 	"all_brands":{
-		"brands":["images/index/brand/sephoracollection.png","images/index/brand/wei.png","images/index/brand/nuxe.png","images/index/brand/loewe.png","images/index/brand/esteelauder.png","images/index/brand/givenchy.png","images/index/brand/benefit.png","images/index/brand/caudalie.png","images/index/brand/lancome.png","images/index/brand/guerlain.png","images/index/brand/mariedalgarcolorstudio.png","images/index/brand/dtrt.png","images/index/brand/gucci.png","images/index/brand/fresh.png","images/index/brand/sk-ii.png","images/index/brand/dior.png"],
+		"brands":["../images/index/brand/sephoracollection.png","../images/index/brand/wei.png","../images/index/brand/nuxe.png","../images/index/brand/loewe.png","../images/index/brand/esteelauder.png","../images/index/brand/givenchy.png","../images/index/brand/benefit.png","../images/index/brand/caudalie.png","../images/index/brand/lancome.png","../images/index/brand/guerlain.png","../images/index/brand/mariedalgarcolorstudio.png","../images/index/brand/dtrt.png","../images/index/brand/gucci.png","../images/index/brand/fresh.png","../images/index/brand/sk-ii.png","../images/index/brand/dior.png"],
 		"brands_name":["丝芙兰","蔚蓝之美","欧树","罗意威","雅诗兰黛","纪梵希","贝玲妃","欧缇丽","兰蔻","娇兰","玛丽黛佳玩色系列","杜比丽夫","古驰","馥蕾诗","SK-II","迪奥"],
 		"type":["热门品牌","独家品牌","全部品牌"]
 	},
 	"picks":{
-		"bg":["images/index/banner/picks_01.jpg","images/index/banner/picks_02.jpg"],
+		"bg":["../images/index/banner/picks_01.jpg","../images/index/banner/picks_02.jpg"],
 		"goods":[
 			{
 				"title":"POLA",
 				"describe":"宝丽馥美洗护惠选套装",
 				"price":"300.00",
-				"img":"images/index/goods/picks_goods_01.jpg",
+				"img":"../images/index/goods/picks_goods_01.jpg",
 				"id":"picks001"
 			},
 			{
 				"title":"PERCYANDREED",
 				"describe":"佩妍丽丰盈洗护惠选套装",
 				"price":"276.00",
-				"img":"images/index/goods/picks_goods_02.jpg",
+				"img":"../images/index/goods/picks_goods_02.jpg",
 				"id":"picks002"
 			},
 			{
 				"title":"DIOR",
 				"describe":"克丽丝汀迪奥烈艳蓝金唇膏（双色双效）",
 				"price":"276.00",
-				"img":"images/index/goods/picks_goods_03.jpg",
+				"img":"../images/index/goods/picks_goods_03.jpg",
 				"id":"picks003"
 			},
 			{
 				"title":"LOEWE",
 				"describe":"罗意威001女款香水",
 				"price":"470.00",
-				"img":"images/index/goods/picks_goods_04.jpg",
+				"img":"../images/index/goods/picks_goods_04.jpg",
 				"id":"picks004"
 			}
 		]
 	},
 	"skincare":{
 		"type":["惠选套装","面部精华","美容仪","面膜","眼部护理","清洁","卸妆","唇部护理","全部"],
-		"slogan":"images/index/type/type_01.jpg",
+		"slogan":"../images/index/type/type_01.jpg",
 		"goods":[
 			{
 				"title":"LANCOME",
 				"describe":"兰蔻眼部精华肌底液节日尊享礼盒（大眼精华）",
 				"price":"680.00",
-				"img":"images/index/goods/goods_hfp_01.jpg",
+				"img":"../images/index/goods/goods_hfp_01.jpg",
 				"id":"skincare001"
 			},
 			{
 				"title":"CAUDALIE",
 				"describe":"欧缇丽葡萄水保湿舒缓喷雾300ml双支套装",
 				"price":"336.00",
-				"img":"images/index/goods/goods_hfp_02.jpg",
+				"img":"../images/index/goods/goods_hfp_02.jpg",
 				"id":"skincare002"
 			},
 			{
 				"title":"SK-II",
 				"describe":"SK-II神仙水微肌因修护精华霜节日礼盒",
 				"price":"2630.00",
-				"img":"images/index/goods/goods_hfp_03.jpg",
+				"img":"../images/index/goods/goods_hfp_03.jpg",
 				"id":"skincare003"
 			},
 			{
 				"title":"WEI",
 				"describe":"蔚蓝之美三层理纹面膜(巧克力面膜)惠选套装",
 				"price":"290.00",
-				"img":"images/index/goods/goods_hfp_04.jpg",
+				"img":"../images/index/goods/goods_hfp_04.jpg",
 				"id":"skincare004"
 			},
 			{
 				"title":"DrJart",
 				"describe":"蒂佳婷水源悦活面膜礼盒(6盒装面膜礼盒)",
 				"price":"650.00",
-				"img":"images/index/goods/goods_hfp_05.jpg",
+				"img":"../images/index/goods/goods_hfp_05.jpg",
 				"id":"skincare005"
 			},
 			{
 				"title":"PETERTHOMASROTH",
 				"describe":"彼得罗夫玫瑰花漾明星套装",
 				"price":"620.00",
-				"img":"images/index/goods/goods_hfp_06.jpg",
+				"img":"../images/index/goods/goods_hfp_06.jpg",
 				"id":"skincare006"
 			},
 			{
 				"title":"MENARDSP",
 				"describe":"SARANARI 金粹精华露套装",
 				"price":"960.00",
-				"img":"images/index/goods/goods_hfp_07.jpg",
+				"img":"../images/index/goods/goods_hfp_07.jpg",
 				"id":"skincare007"
 			},
 			{
 				"title":"DIOR",
 				"describe":"克丽丝汀迪奥未来新肌精华",
 				"price":"790.00",
-				"img":"images/index/goods/goods_hfp_08.jpg",
+				"img":"../images/index/goods/goods_hfp_08.jpg",
 				"id":"skincare008"
 			}
 		],
-		"brands":["images/index/brand/lancome.png","images/index/brand/sk-ii.png","images/index/brand/foreo.png","images/index/brand/esteelauder.png","images/index/brand/sephoracollection.png","images/index/brand/peterthomasroth.png","images/index/brand/caudalie.png","images/index/brand/refa.png"]
+		"brands":["../images/index/brand/lancome.png","../images/index/brand/sk-ii.png","../images/index/brand/foreo.png","../images/index/brand/esteelauder.png","../images/index/brand/sephoracollection.png","../images/index/brand/peterthomasroth.png","../images/index/brand/caudalie.png","../images/index/brand/refa.png"]
 	},
 	"makeup":{
 		"type":["杨幂倾慕唇膏","邓伦挚爱唇釉","999双色唇膏","杨紫弯弯眉粉","娇兰新年限量","人鱼之水甲油","全部"],
-		"slogan":"images/index/type/type_02.jpg",
+		"slogan":"../images/index/type/type_02.jpg",
 		"goods":[
 			{
 				"title":"DIOR",
 				"describe":"克丽丝汀迪奥烈艳蓝金唇膏999金属光",
 				"price":"300.00",
-				"img":"images/index/goods/goods_czp_01.jpg",
+				"img":"../images/index/goods/goods_czp_01.jpg",
 				"id":"makeup001"
 			},
 			{
 				"title":"GIVENCHY",
 				"describe":"纪梵希2018 “良辰梅景”新春礼盒",
 				"price":"995.00",
-				"img":"images/index/goods/goods_czp_02.jpg",
+				"img":"../images/index/goods/goods_czp_02.jpg",
 				"id":"makeup002"
 			},
 			{
 				"title":"ESTEELAUDER",
 				"describe":"雅诗兰黛持妆无瑕气垫粉霜节日限量礼盒17",
 				"price":"520.00",
-				"img":"images/index/goods/goods_czp_03.jpg",
+				"img":"../images/index/goods/goods_czp_03.jpg",
 				"id":"makeup003"
 			},
 			{
 				"title":"LANCOME",
 				"describe":"兰蔻空气轻垫菁纯粉底液节日尊享礼盒",
 				"price":"750.00",
-				"img":"images/index/goods/goods_czp_04.jpg",
+				"img":"../images/index/goods/goods_czp_04.jpg",
 				"id":"makeup004"
 			},
 			{
 				"title":"BOBBIBROWN",
 				"describe":"芭比波朗密集修护菁华粉底液SPF40 PA++++",
 				"price":"620.00",
-				"img":"images/index/goods/goods_czp_05.jpg",
+				"img":"../images/index/goods/goods_czp_05.jpg",
 				"id":"makeup005"
 			},
 			{
 				"title":"MAKEUPFOREVER",
 				"describe":"玫珂菲全新双用水粉霜（果冻粉底）",
 				"price":"400.00",
-				"img":"images/index/goods/goods_czp_06.jpg",
+				"img":"../images/index/goods/goods_czp_06.jpg",
 				"id":"makeup006"
 			},
 			{
 				"title":"BENEFIT",
 				"describe":"贝玲妃蒲公英小清新套装",
 				"price":"300.00",
-				"img":"images/index/goods/goods_czp_01.jpg",
+				"img":"../images/index/goods/goods_czp_01.jpg",
 				"id":"makeup001"
 			},
 			{
 				"title":"SEPHORACOLLECTION",
 				"describe":"丝芙兰轮廓塑型脸部彩妆盘",
 				"price":"300.00",
-				"img":"images/index/goods/goods_czp_08.jpg",
+				"img":"../images/index/goods/goods_czp_08.jpg",
 				"id":"makeup008"
 			}
 		],
-		"brands":["images/index/brand/dior.png","images/index/brand/givenchy.png","images/index/brand/makeupforever.png","images/index/brand/lancome.png","images/index/brand/guerlain.png","images/index/brand/esteelauder.png","images/index/brand/sephoracollection.png","images/index/brand/benefit.png"]
+		"brands":["../images/index/brand/dior.png","../images/index/brand/givenchy.png","../images/index/brand/makeupforever.png","../images/index/brand/lancome.png","../images/index/brand/guerlain.png","../images/index/brand/esteelauder.png","../images/index/brand/sephoracollection.png","../images/index/brand/benefit.png"]
 	},
 	"fragrance":{
 		"type":["迪奥小姐","蔻依爱的誓言香氛","兰蔻奇迹密语","娇兰小黑裙","博柏利暖冬节日香","宝格丽珠宝香氛","全部"],
-		"slogan":"images/index/type/type_03.jpg",
+		"slogan":"../images/index/type/type_03.jpg",
 		"goods":[
 			{
 				"title":"DIOR",
 				"describe":"克丽丝汀迪奥迪奥小姐花漾淡香水",
 				"price":"540.00",
-				"img":"images/index/goods/goods_xfp_01.jpg",
+				"img":"../images/index/goods/goods_xfp_01.jpg",
 				"id":"fragrance001"
 			},
 			{
 				"title":"LOEWE",
 				"describe":"罗意威001男款香水",
 				"price":"640.00",
-				"img":"images/index/goods/goods_xfp_02.jpg",
+				"img":"../images/index/goods/goods_xfp_02.jpg",
 				"id":"fragrance002"
 			},
 			{
 				"title":"GIORGIOARMANI",
 				"describe":"阿玛尼寄情灵动情人节限量套装",
 				"price":"560.00",
-				"img":"images/index/goods/goods_xfp_03.jpg",
+				"img":"../images/index/goods/goods_xfp_03.jpg",
 				"id":"fragrance003"
 			},
 			{
 				"title":"CHLOE",
 				"describe":"蔻依女士淡香水50ml挚爱套装",
 				"price":"750.00",
-				"img":"images/index/goods/goods_xfp_04.jpg",
+				"img":"../images/index/goods/goods_xfp_04.jpg",
 				"id":"fragrance004"
 			},
 			{
 				"title":"ACQUADIPARMA",
 				"describe":"帕尔玛之水高贵玫瑰香水新年奢华套装",
 				"price":"1180.00",
-				"img":"images/index/goods/goods_xfp_05.jpg",
+				"img":"../images/index/goods/goods_xfp_05.jpg",
 				"id":"fragrance005"
 			},
 			{
 				"title":"BVLGARI",
 				"describe":"宝格丽玫香金漾女士套装",
 				"price":"1000.00",
-				"img":"images/index/goods/goods_xfp_06.jpg",
+				"img":"../images/index/goods/goods_xfp_06.jpg",
 				"id":"fragrance006"
 			},
 			{
 				"title":"MARCJACOBS",
 				"describe":"莫杰雏菊女士淡香氛十周年纪念套装",
 				"price":"670.00",
-				"img":"images/index/goods/goods_xfp_07.jpg",
+				"img":"../images/index/goods/goods_xfp_07.jpg",
 				"id":"fragrance007"
 			},
 			{
 				"title":"KENZO",
 				"describe":"凯卓纯净之水女用淡香水套装",
 				"price":"620.00",
-				"img":"images/index/goods/goods_xfp_08.jpg",
+				"img":"../images/index/goods/goods_xfp_08.jpg",
 				"id":"fragrance008"
 			}
 		],
-		"brands":["images/index/brand/dior.png","images/index/brand/miumiu.png","images/index/brand/acquadiparma.png","images/index/brand/chloe.png","images/index/brand/marcjacobs.png","images/index/brand/giorgioarmani.png","images/index/brand/bvlgari.png","images/index/brand/gucci.png"]
+		"brands":["../images/index/brand/dior.png","../images/index/brand/miumiu.png","../images/index/brand/acquadiparma.png","../images/index/brand/chloe.png","../images/index/brand/marcjacobs.png","../images/index/brand/giorgioarmani.png","../images/index/brand/bvlgari.png","../images/index/brand/gucci.png"]
 	},
 	"bodycare":{
 		"type":["惠选套装","沐浴清洁","身体护理","手部护理","胸部护理","足部护理","全部"],
-		"slogan":"images/index/type/type_04.jpg",
+		"slogan":"../images/index/type/type_04.jpg",
 		"goods":[
 			{
 				"title":"CLARINS",
 				"describe":"娇韵诗植物精油沐浴润体浪漫礼包",
 				"price":"620.00",
-				"img":"images/index/goods/goods_xyp_01.jpg",
+				"img":"../images/index/goods/goods_xyp_01.jpg",
 				"id":"bodycare001"
 			},
 			{
 				"title":"CAUDALIE",
 				"describe":"欧缇丽冬季呵护套装-沁心玫瑰",
 				"price":"88.00",
-				"img":"images/index/goods/goods_xyp_02.jpg",
+				"img":"../images/index/goods/goods_xyp_02.jpg",
 				"id":"bodycare002"
 			},
 			{
 				"title":"SEPHORACOLLECTION",
 				"describe":"丝芙兰润唇膏(柑橘)",
 				"price":"45.00",
-				"img":"images/index/goods/goods_xyp_03.jpg",
+				"img":"../images/index/goods/goods_xyp_03.jpg",
 				"id":"bodycare003"
 			},
 			{
 				"title":"NUXE",
 				"describe":"欧树槐花蜜特润柔体乳霜",
 				"price":"175.00",
-				"img":"images/index/goods/goods_xyp_04.jpg",
+				"img":"../images/index/goods/goods_xyp_04.jpg",
 				"id":"bodycare004"
 			},
 			{
 				"title":"SEPHORACOLLECTION",
 				"describe":"丝芙兰法斗柔嫩足膜礼盒",
 				"price":"59.00",
-				"img":"images/index/goods/goods_xyp_05.jpg",
+				"img":"../images/index/goods/goods_xyp_05.jpg",
 				"id":"bodycare005"
 			},
 			{
 				"title":"KENZOKI",
 				"describe":"凯卓感性滋养美肌油惠选套装",
 				"price":"530.00",
-				"img":"images/index/goods/goods_xyp_06.jpg",
+				"img":"../images/index/goods/goods_xyp_06.jpg",
 				"id":"bodycare006"
 			},
 			{
 				"title":"Fresh",
 				"describe":"馥蕾诗海莓修复滋润护手霜",
 				"price":"210.00",
-				"img":"images/index/goods/goods_xyp_07.jpg",
+				"img":"../images/index/goods/goods_xyp_07.jpg",
 				"id":"bodycare007"
 			},
 			{
 				"title":"SEPHORACOLLECTION",
 				"describe":"丝芙兰小银狐沐浴礼盒套装",
 				"price":"79.00",
-				"img":"images/index/goods/goods_xyp_08.jpg",
+				"img":"../images/index/goods/goods_xyp_08.jpg",
 				"id":"bodycare008"
 			}
 		],
-		"brands":["images/index/brand/sephoracollection.png","images/index/brand/fresh.png","images/index/brand/clarins.png","images/index/brand/lancaster.png","images/index/brand/caudalie.png","images/index/brand/foreo.png","images/index/brand/kenzoki.png","images/index/brand/bliss.png"]
+		"brands":["../images/index/brand/sephoracollection.png","../images/index/brand/fresh.png","../images/index/brand/clarins.png","../images/index/brand/lancaster.png","../images/index/brand/caudalie.png","../images/index/brand/foreo.png","../images/index/brand/kenzoki.png","../images/index/brand/bliss.png"]
 	},
 	"manskincare":{
 		"type":["惠选套装","控油平衡","保湿水润","滋养紧致","剃须护理","眼部护理","全部"],
-		"slogan":"images/index/type/type_05.jpg",
+		"slogan":"../images/index/type/type_05.jpg",
 		"goods":[
 			{
 				"title":"LAB_SERIES",
 				"describe":"LAB SERIES锋范抗皱紧致面霜套装",
 				"price":"790.00",
-				"img":"images/index/goods/goods_nshfp_01.jpg",
+				"img":"../images/index/goods/goods_nshfp_01.jpg",
 				"id":"manskincare001"
 			},
 			{
 				"title":"BIOTHERM",
 				"describe":"碧欧泉男士水动力家族尊享礼盒",
 				"price":"980.00",
-				"img":"images/index/goods/goods_nshfp_02.jpg",
+				"img":"../images/index/goods/goods_nshfp_02.jpg",
 				"id":"manskincare002"
 			},
 			{
 				"title":"PHILIPS",
 				"describe":"飞利浦眼部能量仪",
 				"price":"899.00",
-				"img":"images/index/goods/goods_nshfp_03.jpg",
+				"img":"../images/index/goods/goods_nshfp_03.jpg",
 				"id":"manskincare003"
 			},
 			{
 				"title":"DTRT",
 				"describe":"杜比丽夫精致男士特惠套装",
 				"price":"388.00",
-				"img":"images/index/goods/goods_nshfp_04.jpg",
+				"img":"../images/index/goods/goods_nshfp_04.jpg",
 				"id":"manskincare004"
 			},
 			{
 				"title":"BIOTHERM",
 				"describe":"碧欧泉男士蓝钻紧肤露尊享礼盒",
 				"price":"450.00",
-				"img":"images/index/goods/goods_nshfp_05.jpg",
+				"img":"../images/index/goods/goods_nshfp_05.jpg",
 				"id":"manskincare005"
 			},
 			{
 				"title":"SHISEIDO",
 				"describe":"资生堂男士滋润乳惠选套装",
 				"price":"280.00",
-				"img":"images/index/goods/goods_nshfp_06.jpg",
+				"img":"../images/index/goods/goods_nshfp_06.jpg",
 				"id":"manskincare006"
 			},
 			{
 				"title":"DTRT",
 				"describe":"杜比丽夫男士净肤理容特惠套装",
 				"price":"340.00",
-				"img":"images/index/goods/goods_nshfp_07.jpg",
+				"img":"../images/index/goods/goods_nshfp_07.jpg",
 				"id":"manskincare007"
 			},
 			{
 				"title":"LABSERIES",
 				"describe":"LAB SERIES蓝朋友面膜套装",
 				"price":"505.00",
-				"img":"images/index/goods/goods_nshfp_08.jpg",
+				"img":"../images/index/goods/goods_nshfp_08.jpg",
 				"id":"manskincare008"
 			}
 		],
-		"brands":["images/index/brand/labseries.png","images/index/brand/biotherm.png","images/index/brand/dtrt.png","images/index/brand/sk-ii.png","images/index/brand/dior.png","images/index/brand/clinique.png","images/index/brand/clarins.png","images/index/brand/foreo.png"]
+		"brands":["../images/index/brand/labseries.png","../images/index/brand/biotherm.png","../images/index/brand/dtrt.png","../images/index/brand/sk-ii.png","../images/index/brand/dior.png","../images/index/brand/clinique.png","../images/index/brand/clarins.png","../images/index/brand/foreo.png"]
 	},
 	"haircare":{
 		"type":["惠选套装","美发工具","洗发产品","护发产品","头皮护理","美发产品","全部"],
-		"slogan":"images/index/type/type_06.jpg",
+		"slogan":"../images/index/type/type_06.jpg",
 		"goods":[
 			{
 				"title":"PERCYANDREED",
 				"describe":"佩妍丽丰盈洗护惠选套装",
 				"price":"276.00",
-				"img":"images/index/goods/goods_mfhfp_01.jpg",
+				"img":"../images/index/goods/goods_mfhfp_01.jpg",
 				"id":"haircare001"
 			},
 			{
 				"title":"POLA",
 				"describe":"宝丽馥美修护洗发露",
 				"price":"150.00",
-				"img":"images/index/goods/goods_mfhfp_02.jpg",
+				"img":"../images/index/goods/goods_mfhfp_02.jpg",
 				"id":"haircare002"
 			},
 			{
 				"title":"SEBASTIAN",
 				"describe":"塞巴斯汀刚劲啫喱",
 				"price":"278.00",
-				"img":"images/index/goods/goods_mfhfp_03.jpg",
+				"img":"../images/index/goods/goods_mfhfp_03.jpg",
 				"id":"haircare003"
 			},
 			{
 				"title":"SP",
 				"describe":"德研丝秀发焕能角蛋白养护组合",
 				"price":"696.00",
-				"img":"images/index/goods/goods_mfhfp_04.jpg",
+				"img":"../images/index/goods/goods_mfhfp_04.jpg",
 				"id":"haircare004"
 			},
 			{
 				"title":"TangleTeezer",
 				"describe":"璀璨金豪华便携款美发梳",
 				"price":"130.00",
-				"img":"images/index/goods/goods_mfhfp_05.jpg",
+				"img":"../images/index/goods/goods_mfhfp_05.jpg",
 				"id":"haircare005"
 			},
 			{
 				"title":"PERCYANDREED",
 				"describe":"佩妍丽奇迹发霜",
 				"price":"168.00",
-				"img":"images/index/goods/goods_mfhfp_06.jpg",
+				"img":"../images/index/goods/goods_mfhfp_06.jpg",
 				"id":"haircare006"
 			},
 			{
 				"title":"WELLA",
 				"describe":"威娜臻活盈彩轻盈护发露",
 				"price":"298.00",
-				"img":"images/index/goods/goods_mfhfp_07.jpg",
+				"img":"../images/index/goods/goods_mfhfp_07.jpg",
 				"id":"haircare007"
 			},
 			{
 				"title":"PHYTO",
 				"describe":"发朵七号滋养发霜",
 				"price":"230.00",
-				"img":"images/index/goods/goods_mfhfp_08.jpg",
+				"img":"../images/index/goods/goods_mfhfp_08.jpg",
 				"id":"haircare008"
 			}
 		],
-		"brands":["images/index/brand/sp.png","images/index/brand/wella.png","images/index/brand/percyandreed.png","images/index/brand/sebastian.png","images/index/brand/tangleteezer.png","images/index/brand/pola.png","images/index/brand/phyto.png","images/index/brand/philips.png"]
+		"brands":["../images/index/brand/sp.png","../images/index/brand/wella.png","../images/index/brand/percyandreed.png","../images/index/brand/sebastian.png","../images/index/brand/tangleteezer.png","../images/index/brand/pola.png","../images/index/brand/phyto.png","../images/index/brand/philips.png"]
 	},
 	"tools":{
 		"type":["散粉刷","唇刷","睫毛夹","眼影刷","化妆刷套组","美妆萌萌蛋","全部"],
-		"slogan":"images/index/type/type_07.jpg",
+		"slogan":"../images/index/type/type_07.jpg",
 		"goods":[
 			{
 				"title":"SHOBI",
 				"describe":"SPV陶瓷肌粉底刷",
 				"price":"150.00",
-				"img":"images/index/goods/goods_gjl_01.jpg",
+				"img":"../images/index/goods/goods_gjl_01.jpg",
 				"id":"tools001"
 			},
 			{
 				"title":"MAKEUPFOREVER",
 				"describe":"玫珂菲随行脸部刷具组合",
 				"price":"1080.00",
-				"img":"images/index/goods/goods_gjl_02.jpg",
+				"img":"../images/index/goods/goods_gjl_02.jpg",
 				"id":"tools002"
 			},
 			{
 				"title":"SHUUEMURA",
 				"describe":"植村秀55号粉底刷",
 				"price":"480.00",
-				"img":"images/index/goods/goods_gjl_03.jpg",
+				"img":"../images/index/goods/goods_gjl_03.jpg",
 				"id":"tools003"
 			},
 			{
 				"title":"beautyblender",
 				"describe":"美妆蛋冰绿薄荷化妆海绵",
 				"price":"168.00",
-				"img":"images/index/goods/goods_gjl_04.jpg",
+				"img":"../images/index/goods/goods_gjl_04.jpg",
 				"id":"tools004"
 			},
 			{
 				"title":"SEPHORACOLLECTION",
 				"describe":"丝芙兰米妮彩妆刷套装",
 				"price":"499.00",
-				"img":"images/index/goods/goods_gjl_05.jpg",
+				"img":"../images/index/goods/goods_gjl_05.jpg",
 				"id":"tools005"
 			},
 			{
 				"title":"TWEEZERMAN",
 				"describe":"微之魅玫瑰金恋爱物语礼盒",
 				"price":"299.00",
-				"img":"images/index/goods/goods_gjl_06.jpg",
+				"img":"../images/index/goods/goods_gjl_06.jpg",
 				"id":"tools006"
 			},
 			{
 				"title":"beautyblender",
 				"describe":"美妆蛋孖宝清洁庆典套装",
 				"price":"390.00",
-				"img":"images/index/goods/goods_gjl_07.jpg",
+				"img":"../images/index/goods/goods_gjl_07.jpg",
 				"id":"tools007"
 			},
 			{
 				"title":"SEPHORACOLLECTION",
 				"describe":"丝芙兰专业松粉刷",
 				"price":"209.00",
-				"img":"images/index/goods/goods_gjl_08.jpg",
+				"img":"../images/index/goods/goods_gjl_08.jpg",
 				"id":"tools008"
 			}
 		],
-		"brands":["images/index/brand/beautyblender.png","images/index/brand/sephoracollection.png","images/index/brand/shuuemura.png","images/index/brand/makeupforever.png","images/index/brand/tangleteezer.png","images/index/brand/tweezerman.png","images/index/brand/lancome.png","images/index/brand/decorative.png"]
+		"brands":["../images/index/brand/beautyblender.png","../images/index/brand/sephoracollection.png","../images/index/brand/shuuemura.png","../images/index/brand/makeupforever.png","../images/index/brand/tangleteezer.png","../images/index/brand/tweezerman.png","../images/index/brand/lancome.png","../images/index/brand/decorative.png"]
 	},
 	"guessyoulike":[
 		{
 			"title":"ESTEELAUDER",
 			"describe":"雅诗兰黛明星三件组新年套装",
 			"price":"2100.00",
-			"img":"images/index/goods/goods_cnxh_01.jpg",
+			"img":"../images/index/goods/goods_cnxh_01.jpg",
 			"id":"guessyoulike001"
 		},
 		{
 			"title":"GUERLAIN",
 			"describe":"娇兰帝皇蜂姿黄金复原蜜旅行套装",
 			"price":"399.00",
-			"img":"images/index/goods/goods_cnxh_02.jpg",
+			"img":"../images/index/goods/goods_cnxh_02.jpg",
 			"id":"guessyoulike002"
 		},
 		{
 			"title":"DIOR",
 			"describe":"克丽丝汀迪奥魅惑染唇蜜",
 			"price":"290.00",
-			"img":"images/index/goods/goods_cnxh_03.jpg",
+			"img":"../images/index/goods/goods_cnxh_03.jpg",
 			"id":"guessyoulike003"
 		},
 		{
 			"title":"SK-II",
 			"describe":"SK-II神仙水微肌因修护精华霜节日礼盒",
 			"price":"2630.00",
-			"img":"images/index/goods/goods_cnxh_04.jpg",
+			"img":"../images/index/goods/goods_cnxh_04.jpg",
 			"id":"guessyoulike004"
 		},
 		{
 			"title":"ESTEELAUDER",
 			"describe":"雅诗兰黛特润修护肌透精华露(小棕瓶)",
 			"price":"850.00",
-			"img":"images/index/goods/goods_cnxh_05.jpg",
+			"img":"../images/index/goods/goods_cnxh_05.jpg",
 			"id":"guessyoulike005"
 		},
 		{
 			"title":"AKEUPFOREVER",
 			"describe":"玫珂菲全新双用水粉霜（果冻粉底）",
 			"price":"400.00",
-			"img":"images/index/goods/goods_cnxh_06.jpg",
+			"img":"../images/index/goods/goods_cnxh_06.jpg",
 			"id":"guessyoulike006"
 		},
 		{
 			"title":"SHOBI",
 			"describe":"SBV陶瓷肌粉底刷",
 			"price":"150.00",
-			"img":"images/index/goods/goods_cnxh_07.jpg",
+			"img":"../images/index/goods/goods_cnxh_07.jpg",
 			"id":"guessyoulike007"
 		},
 		{
 			"title":"BENEFIT",
 			"describe":"颊彩盛放限量彩妆盘",
 			"price":"550.00",
-			"img":"images/index/goods/goods_cnxh_08.jpg",
+			"img":"../images/index/goods/goods_cnxh_08.jpg",
 			"id":"guessyoulike008"
 		},
 		{
 			"title":"ESTEELAUDER",
 			"describe":"雅诗兰黛沁水粉底液 SPF15 PA++",
 			"price":"480.00",
-			"img":"images/index/goods/goods_cnxh_09.jpg",
+			"img":"../images/index/goods/goods_cnxh_09.jpg",
 			"id":"guessyoulike009"
 		},
 		{
 			"title":"SEPHORACOLLECTION",
 			"describe":"丝芙兰小银狐漫天繁星化妆盘",
 			"price":"499.00",
-			"img":"images/index/goods/goods_cnxh_10.jpg",
+			"img":"../images/index/goods/goods_cnxh_10.jpg",
 			"id":"guessyoulike010"
 		},
 		{
 			"title":"SEPHORACOLLECTION",
 			"describe":"丝芙兰假睫毛",
 			"price":"79.00",
-			"img":"images/index/goods/goods_cnxh_11.jpg",
+			"img":"../images/index/goods/goods_cnxh_11.jpg",
 			"id":"guessyoulike011"
 		},
 		{
 			"title":"SEPHORACOLLECTION",
 			"describe":"丝芙兰小银狐幻彩纯色口红笔套装",
 			"price":"329.00",
-			"img":"images/index/goods/goods_cnxh_12.jpg",
+			"img":"../images/index/goods/goods_cnxh_12.jpg",
 			"id":"guessyoulike012"
 		},
 		{
 			"title":"SK-II",
 			"describe":"SK-II护肤面膜（前男友面膜）",
 			"price":"1060.00",
-			"img":"images/index/goods/goods_cnxh_13.jpg",
+			"img":"../images/index/goods/goods_cnxh_13.jpg",
 			"id":"guessyoulike013"
 		},
 		{
 			"title":"FOREO",
 			"describe":"露娜LUNA.2全球限量礼盒（买大送小）",
 			"price":"1880.00",
-			"img":"images/index/goods/goods_cnxh_14.jpg",
+			"img":"../images/index/goods/goods_cnxh_14.jpg",
 			"id":"guessyoulike014"
 		},
 		{
 			"title":"ESTEELAUDER",
 			"describe":"雅诗兰黛高纯红石榴晚霜套装",
 			"price":"620.00",
-			"img":"images/index/goods/goods_cnxh_15.jpg",
+			"img":"../images/index/goods/goods_cnxh_15.jpg",
 			"id":"guessyoulike015"
 		},
 		{
 			"title":"LANCOME",
 			"describe":"兰蔻菁纯臻颜润养眼霜节日尊享礼盒",
 			"price":"1080.00",
-			"img":"images/index/goods/goods_cnxh_16.jpg",
+			"img":"../images/index/goods/goods_cnxh_16.jpg",
 			"id":"guessyoulike016"
 		},
 		{
 			"title":"GIVENCHY",
 			"describe":"纪梵希禁忌之吻霓虹唇膏",
 			"price":"320.00",
-			"img":"images/index/goods/goods_cnxh_17.jpg",
+			"img":"../images/index/goods/goods_cnxh_17.jpg",
 			"id":"guessyoulike017"
 		},
 		{
 			"title":"SHISEIDO",
 			"describe":"资生堂百优丰盈提拉紧致眼霜（奇迹小银管）惠选套装",
 			"price":"590.00",
-			"img":"images/index/goods/goods_cnxh_18.jpg",
+			"img":"../images/index/goods/goods_cnxh_18.jpg",
 			"id":"guessyoulike018"
 		},
 		{
 			"title":"SHISEIDO",
 			"describe":"资生堂红妍肌活精华露（傲娇红腰子）50ml惠选套装",
 			"price":"860.00",
-			"img":"images/index/goods/goods_cnxh_19.jpg",
+			"img":"../images/index/goods/goods_cnxh_19.jpg",
 			"id":"guessyoulike019"
 		},
 		{
 			"title":"CLINIQUE",
 			"describe":"倩碧花漾胭脂(小雏菊腮红)",
 			"price":"130.00",
-			"img":"images/index/goods/goods_cnxh_20.jpg",
+			"img":"../images/index/goods/goods_cnxh_20.jpg",
 			"id":"guessyoulike020"
 		}
 	],

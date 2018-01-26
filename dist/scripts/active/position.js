@@ -20,7 +20,7 @@ define( [ "jquery" ], function(){
 			this.as.on( "click", $.proxy( this.to_list, this ) );
 		};
 		to_list(){
-			self.location.href = "http://localhost:8888/html/commodity_list.html";
+			self.location.href = "commodity_list.html";
 		};
 		cal_fix(){
 			let scroll = $( window ).scrollTop();
