@@ -277,7 +277,7 @@ define( [ "jquery", "cookie" ], function(){
 				} );
 				let _s = self;
 				setTimeout( function(){
-					_s.location.href = "http://localhost:8888/index.html";
+					_s.location.href = "index.html";
 				}, 500 );
 			} else {
 				let zh = '[{"userphone":"'+userphone+'","password":"'+password+'","login": true }]';
@@ -287,7 +287,7 @@ define( [ "jquery", "cookie" ], function(){
 				} );　
 				let _s = self;
 				setTimeout( function(){
-					_s.location.href = "http://localhost:8888/index.html";
+					_s.location.href = "index.html";
 				}, 500 );
 			};
 		};
